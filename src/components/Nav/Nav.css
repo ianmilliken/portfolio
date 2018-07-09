@@ -1,0 +1,33 @@
+.nav {
+	position: fixed;
+}
+
+.nav__link {
+	position: fixed;
+	top: 50%;
+	padding-top: 4rem;
+	font-size: 1.4rem;
+	transform-origin: top center;
+	&--l {
+		left: 0;
+		transform: rotateZ(-90deg);
+	}
+	&--r {
+		right: 0;
+		transform: rotateZ(90deg);
+	}
+	& > a {
+		display: block;
+		text-decoration: none;
+	}
+}
+
+.nav__line {
+    position: absolute;
+    height: 0.1rem;
+    width: 100%;
+    display: block;
+    transform: rotateZ(90deg);
+    background: #00DEA1;
+    margin-top: -4rem;
+}

@@ -5,3 +5,14 @@
     align-items: center;
     max-width: 100%;
 }
+
+ul.user-links {
+	justify-content: flex-end;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+
+	& > li:not(:first-of-type) {
+		margin-left: 3rem;
+	}
+}

@@ -2,7 +2,9 @@ import React from "react"
 import Helmet from "react-helmet"
 import config from "../../data/SiteConfig"
 import "./index.css"
+import "./font-awesome.css"
 import Header from "../components/Header/Header"
+import Nav from "../components/Nav/Nav"
 import Footer from "../components/Footer/Footer"
 
 export default class MainLayout extends React.Component {
@@ -23,6 +25,8 @@ export default class MainLayout extends React.Component {
       title = "Categories";
     } else if (currentPath === "about/") {
       title = "About";
+    } else if (currentPath === "work/") {
+      title = "Work";
     } else if (currentPath.indexOf("posts")) {
       title = "Article";
     } else if (currentPath.indexOf("tags/")) {
@@ -40,6 +44,20 @@ export default class MainLayout extends React.Component {
     }
     return title;
   }
+  getLocalMenu() {
+    function capitalize(string) {
+      return string.charAt(0).toUpperCase() + string.slice(1);
+    }
+    const pathPrefix = config.pathPrefix ? config.pathPrefix : "/";
+    const currentPath = this.props.location.pathname
+      .replace(pathPrefix, "")
+      .replace("/", "");
+    let menu = 0;
+    if (currentPath === "work/") {
+      menu = 1;
+    }
+    return menu;
+  }
   render() {
     const { children } = this.props;
     return (
@@ -49,7 +67,8 @@ export default class MainLayout extends React.Component {
           <meta name="description" content={config.siteDescription} />
         </Helmet>
         <Header config={config} />
-        {children()}
+        <Nav menu={this.getLocalMenu()} />
+        <main>{children()}</main>
         <Footer config={config} />
       </div>
     );
