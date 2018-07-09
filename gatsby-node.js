@@ -4,7 +4,7 @@ const webpackLodashPlugin = require("lodash-webpack-plugin");
 
 exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
   const { createNodeField } = boundActionCreators;
-  let slug;
+  let slug, name;
   if (node.internal.type === "MarkdownRemark") {
     const fileNode = getNode(node.parent);
     const parsedFilePath = path.parse(fileNode.relativePath);
@@ -26,7 +26,9 @@ exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
     ) {
       slug = `/${_.kebabCase(node.frontmatter.slug)}`;
     }
+    name = fileNode.sourceInstanceName;
     createNodeField({ node, name: "slug", value: slug });
+    createNodeField({ node, name: "name", value: name });
   }
 };
 
@@ -34,9 +36,10 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
   const { createPage } = boundActionCreators;
 
   return new Promise((resolve, reject) => {
-    const postPage = path.resolve("src/templates/post.jsx");
-    const tagPage = path.resolve("src/templates/tag.jsx");
-    const categoryPage = path.resolve("src/templates/category.jsx");
+    const postPage = path.resolve("src/templates/post.jsx")
+    const workPage = path.resolve("src/templates/work.jsx")
+    const tagPage = path.resolve("src/templates/tag.jsx")
+    const categoryPage = path.resolve("src/templates/category.jsx")
     resolve(
       graphql(
         `
@@ -50,6 +53,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
                   }
                   fields {
                     slug
+                    name
                   }
                 }
               }
