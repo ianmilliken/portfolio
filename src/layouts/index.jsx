@@ -61,14 +61,14 @@ export default class MainLayout extends React.Component {
   render() {
     const { children } = this.props;
     return (
-      <div>
+      <div style={{ backgroundColor: '#111310', color: '#FFFFFF' }}>
         <Helmet>
           <title>{`${config.siteTitle} |  ${this.getLocalTitle()}`}</title>
           <meta name="description" content={config.siteDescription} />
         </Helmet>
         <Header config={config} />
         <Nav menu={this.getLocalMenu()} />
-        <main style={{ backgroundColor: '#111310', color: '#FFFFFF' }}>{children()}</main>
+        <main>{children()}</main>
         <Footer config={config} />
       </div>
     );

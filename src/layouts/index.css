@@ -86,6 +86,7 @@ body {
   font-family: var(--brandFont);
   font-size: var(--baseBodySize);
   line-height: 1.4;
+  background-color: #00DEA1;
 }
 
 h1 {
