@@ -1,35 +1,12 @@
 import React from "react"
 import Helmet from "react-helmet"
-import anime from "animejs"
 import PostListing from "../components/PostListing/PostListing"
 import SEO from "../components/SEO/SEO"
 import config from "../../data/SiteConfig"
-import Triangle from "../components/Icons/Triangle"
-import Circle from "../components/Icons/Circle"
 
 class Index extends React.Component {
   constructor(props) {
     super(props)
-  }
-  componentDidMount() {
-    var circle_animation = anime({
-      targets: '.shape--left',
-      translateX: function() { return anime.random(-75, 150) + '%'; },
-      translateY: function() { return anime.random(-75, 150) + '%'; },
-      duration: function() { return anime.random(15000, 20000); },
-      direction: 'alternate',
-      loop: true,
-      easing: 'easeInCubic'
-    });
-    var triangle_animation = anime({
-      targets: '.shape--right',
-      translateX: function() { return anime.random(-75, 150) + '%'; },
-      translateY: function() { return anime.random(-75, 150) + '%'; },
-      duration: function() { return anime.random(15000, 20000); },
-      direction: 'alternate',
-      loop: true,
-      easing: 'easeInCubic'
-    });
   }
   render() {
     const postEdges = this.props.data.allMarkdownRemark.edges;
@@ -54,8 +31,6 @@ class Index extends React.Component {
               <div>Leeds, UK</div>
             </div>
           </div>
-          <Circle classes="shape shape--left" color="#00DEA1"/>
-          <Triangle classes="shape shape--right" color="#00DEA1"/>
         </div>
         <PostListing postEdges={postEdges} />
       </div>
