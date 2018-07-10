@@ -1,6 +1,7 @@
 module.exports = {
   blogPostDir: "sample-posts", // The name of directory that contains your posts.
   workDir: "work",
+  aboutDir: "about",
   siteTitle: "Ian Milliken – User Interface Design, User Experience Design, Front End Development, Branding", // Site title.
   siteTitleAlt: "Ian Milliken – User Interface Design, User Experience Design, Front End Development, Branding", // Alternative site title for SEO.
   siteLogo: "/logos/logo-1024.png", // Logo used for SEO and manifest.

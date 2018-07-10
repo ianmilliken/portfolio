@@ -80,13 +80,15 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
             categorySet.add(edge.node.frontmatter.category);
           }
 
-          createPage({
-            path: edge.node.fields.slug,
-            component: postPage,
-            context: {
-              slug: edge.node.fields.slug
-            }
-          });
+          if (edge.node.fields.name !== "about") {
+            createPage({
+              path: edge.node.fields.slug,
+              component: postPage,
+              context: {
+                slug: edge.node.fields.slug
+              }
+            });
+          }
         });
 
         const tagList = Array.from(tagSet);

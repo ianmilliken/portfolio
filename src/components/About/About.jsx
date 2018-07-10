@@ -1,30 +1,49 @@
-import React, { Component } from "react";
-import "./About.css";
+import React, { Component } from "react"
+import "./About.css"
 
 class About extends Component {
-  render() {
-    return (
-      <div className="container">
-        <div className="banner">
-			<h1 className="header-offset">
-	          A british born designer + developer living in Leeds, UK.
-	        </h1>
-	        <p>
-	        	I got my first professional gig about 7 years ago, and since then I have been lucky enough to work with all kinds of talented people, on all sorts of projects.
-	    	</p>
-	    	<p>
-				Primarily I work in UI & UX Design and Front End Development, covering everything from wireframes and UAT, to coding and optimisation. I also work in the related disciplines of branding, graphic design, and photography.
-	    	</p>
-			<p>
-				I’ve recently relocated to Leeds after 2 years overseas where I was working as the Lead Designer at Chorck, which is a SAAS startup located in Brisbane.
-			</p>
-			<p>
-				I’m always keen to discuss new opportunuties, so if you’d like to work with me on something please get in touch.
-			</p>
-        </div>
-      </div>
-    );
-  }
+	constructor(props) {
+		super(props)
+	}
+	getPostList() {
+	    const postList = []
+	    this.props.data.forEach(edge => {
+	    	postList.push({
+	        	title: edge.node.frontmatter.title,
+	        	html: edge.node.html,
+	        	skill_title: edge.node.frontmatter.skill_title,
+	        	skill_intro: edge.node.frontmatter.skill_intro,
+	        	skills: edge.node.frontmatter.skills
+	        })
+	    })
+	    return postList
+	}
+
+	render() {
+		const postList = this.getPostList()
+	  	return (
+	  		<div className="container">
+		  		<div className="banner">
+					<p>{this.props.skills}</p>
+					{ postList.map(post => (
+						<div className="banner">
+							<h1 className="header-offset">{post.title}</h1>
+							<div dangerouslySetInnerHTML={{ __html: post.html }}></div>
+							<h2>{post.skill_title}</h2>
+							<p>{post.skill_intro}</p>
+							<ul className="list">
+								{ post.skills.map(skill => (
+									<li key={skill} className="item">
+										<h4 className="item__title">{skill}</h4>
+									</li>
+								))}
+							</ul>
+						</div>
+					))}
+				</div>
+			</div>
+		)
+	}
 }
 
 export default About;
