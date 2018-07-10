@@ -35,6 +35,7 @@
     "react-dom": "^16.2.0",
     "react-helmet": "^5.2.0",
     "react-share": "^2.0.0",
+    "react-transition-group": "^2.4.0",
     "react-twitter-widgets": "^1.7.1"
   },
   "devDependencies": {

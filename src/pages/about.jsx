@@ -2,15 +2,18 @@ import React, { Component } from "react";
 import Helmet from "react-helmet";
 import About from "../components/About/About";
 import config from "../../data/SiteConfig";
+import Transition from "../components/Transition/Transition"
 
 class AboutPage extends Component {
   render() {
   	const postEdges = this.props.data.allMarkdownRemark.edges;
     return (
-      <div>
+      <Transition>
+		<div>
         <Helmet title={`About | ${config.siteTitle}`} />
         <About data={postEdges} />
       </div>
+      </Transition>
     );
   }
 }

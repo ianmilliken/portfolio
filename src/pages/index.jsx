@@ -3,6 +3,7 @@ import Helmet from "react-helmet"
 import PostListing from "../components/PostListing/PostListing"
 import SEO from "../components/SEO/SEO"
 import config from "../../data/SiteConfig"
+import Transition from "../components/Transition/Transition"
 
 class Index extends React.Component {
   constructor(props) {
@@ -11,29 +12,31 @@ class Index extends React.Component {
   render() {
     const postEdges = this.props.data.allMarkdownRemark.edges;
     return (
-      <div>
-        <Helmet title={config.siteTitle} />
-        <SEO postEdges={postEdges} />
-        <div className="full-height grid-banner">
-          <div className="container">
-            <div className="center">
-              <h1 className="title">Hello. G’day. Ayup.</h1>
-              <p className="p--large">My name’s Ian. I design & build awesome products & brands for innovative businesses around the globe.</p>
+      <Transition>
+        <div>
+          <Helmet title={config.siteTitle} />
+          <SEO postEdges={postEdges} />
+          <div className="full-height grid-banner">
+            <div className="container">
+              <div className="center">
+                <h1 className="title">Hello. G’day. Ayup.</h1>
+                <p className="p--large">My name’s Ian. I design & build awesome products & brands for innovative businesses around the globe.</p>
+              </div>
+            </div>
+            <div className="status">
+              <div className="status__l">
+                <div className="label">Status</div>
+                <div>Available for hire</div>
+              </div>
+              <div className="status__r">
+                <div className="label">Location</div>
+                <div>Leeds, UK</div>
+              </div>
             </div>
           </div>
-          <div className="status">
-            <div className="status__l">
-              <div className="label">Status</div>
-              <div>Available for hire</div>
-            </div>
-            <div className="status__r">
-              <div className="label">Location</div>
-              <div>Leeds, UK</div>
-            </div>
-          </div>
+          <PostListing postEdges={postEdges} />
         </div>
-        <PostListing postEdges={postEdges} />
-      </div>
+      </Transition>
     );
   }
 }
