@@ -4,6 +4,7 @@
   "version": "1.0.0",
   "author": "Ian Milliken <ianmilliken@live.co.uk>",
   "dependencies": {
+    "animejs": "^2.2.0",
     "babel-plugin-lodash": "^3.3.2",
     "font-awesome": "^4.7.0",
     "gatsby": "^1.9.178",
