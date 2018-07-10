@@ -15,4 +15,8 @@ ul.user-links {
 	& > li:not(:first-of-type) {
 		margin-left: 3rem;
 	}
+
+	& * {
+		color: inherit;
+	}
 }

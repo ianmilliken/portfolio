@@ -68,7 +68,7 @@ export default class MainLayout extends React.Component {
         </Helmet>
         <Header config={config} />
         <Nav menu={this.getLocalMenu()} />
-        <main>{children()}</main>
+        <main style={{ backgroundColor: '#111310', color: '#FFFFFF' }}>{children()}</main>
         <Footer config={config} />
       </div>
     );

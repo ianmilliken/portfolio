@@ -1,5 +1,6 @@
-import React from "react";
-import Link from "gatsby-link";
+import React from "react"
+import Link from "gatsby-link"
+import "./PostListing.css"
 
 class PostListing extends React.Component {
   getPostList() {
@@ -20,13 +21,19 @@ class PostListing extends React.Component {
   render() {
     const postList = this.getPostList();
     return (
-      <div>
-        {// Your post list here.
-        postList.map(post => (
-          <Link to={post.path} key={post.title}>
-            <h1>{post.title}</h1>
-          </Link>
-        ))}
+      <div className="container">
+      <h4 className="label label--large center">Selected Works</h4>
+        <ul className="list">
+          {// Your post list here.
+          postList.map(post => (
+            <li key={post.title} className="item">
+              <Link to={post.path} className="item__link">
+                <h2 className="item__title">{post.title}</h2>
+                <div className="item__date">{post.date}</div>
+              </Link>
+            </li>
+          ))}
+        </ul>
       </div>
     );
   }

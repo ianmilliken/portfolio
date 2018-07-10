@@ -56,7 +56,7 @@ export const pageQuery = graphql`
             title
             tags
             cover
-            date
+            date(formatString: "YYYY")
           }
         }
       }
