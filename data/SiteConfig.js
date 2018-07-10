@@ -29,7 +29,7 @@ module.exports = {
     },
     {
       label: "Behance",
-      url: "https://www.behance.net/ianmillike271b",
+      url: "https://www.behance.net/ianmilliken90",
       iconClassName: "fa fa-behance"
     },
     {
