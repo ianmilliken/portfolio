@@ -1,6 +1,7 @@
 import React from "react"
 import Link from "gatsby-link"
 import "./PostListing.css"
+import Arrow from "../Icons/Arrow"
 
 class PostListing extends React.Component {
   getPostList() {
@@ -30,6 +31,7 @@ class PostListing extends React.Component {
               <Link to={post.path} className="item__link">
                 <h2 className="item__title">{post.title}</h2>
                 <div className="item__date">{post.date}</div>
+                <Arrow classes="item__arrow" />
               </Link>
             </li>
           ))}

@@ -15,7 +15,7 @@ class Index extends React.Component {
           <div className="container">
             <div className="center">
               <h1 className="title">Hello. G’day. Ayup.</h1>
-              <p className="p--large">My name’s Ian. I design & build awesome products & brands for innovative businesses across the globe.</p>
+              <p className="p--large">My name’s Ian. I design & build awesome products & brands for innovative businesses around the globe.</p>
             </div>
           </div>
           <div className="status">
