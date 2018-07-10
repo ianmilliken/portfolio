@@ -122,12 +122,12 @@ export default class MainLayout extends React.Component {
           <title>{`${config.siteTitle} |  ${this.getLocalTitle()}`}</title>
           <meta name="description" content={config.siteDescription} />
         </Helmet>
+        <Circle classes="shape shape--left" color="#00DEA1"/>
+        <Triangle classes="shape shape--right" color="#00DEA1"/>
         <Header config={config} />
         <Nav menu={this.getLocalMenu()} />
         <main>{children()}</main>
         <Footer config={config} />
-        <Circle classes="shape shape--left" color="#00DEA1"/>
-        <Triangle classes="shape shape--right" color="#00DEA1"/>
       </div>
     );
   }
