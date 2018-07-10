@@ -1,7 +1,7 @@
 ---
 title: "A british born designer + developer living in Leeds, UK"
 skill_title: "My current stack"
-skill_intro: "The tools and languages I work with often changes, below are the ones that I currently use day-to-day"
+skill_intro: "The tools and languages I work with often change, below are the ones that I currently use day-to-day"
 skills:
   - JavaScript
   - React

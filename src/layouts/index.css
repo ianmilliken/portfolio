@@ -242,6 +242,19 @@ a {
   }
 }
 
+.content {
+  & h2 {
+    margin-top: 8.6rem;
+    font-weight: 700;
+  }
+  & h2 + p:first-of-type {
+    margin-top: 1.6rem;
+  }
+  & p {
+    font-size: 1.8rem;
+  }
+}
+
 
 /* 
  *
