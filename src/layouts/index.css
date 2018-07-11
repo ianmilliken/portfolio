@@ -113,6 +113,10 @@ a {
 	color: inherit;
 }
 
+main {
+  position: relative; /* So content is selectable over fixed animated shapes */
+}
+
 
 /* 
  *
