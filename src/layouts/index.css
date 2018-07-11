@@ -206,7 +206,6 @@ a {
 .shape {
   position: fixed;
   opacity: 0.1;
-  mix-blend-mode: lighten;
   will-change: transform;
   &--left {
     left: 20%;
@@ -216,6 +215,19 @@ a {
     right: -10%;
     top: 33%;
   }
+}
+
+.index .shape {
+  mix-blend-mode: lighten;
+}
+
+.work .shape {
+  mix-blend-mode: normal;
+}
+
+.about .shape {
+  opacity: 0.3;
+  mix-blend-mode: overlay;
 }
 
 

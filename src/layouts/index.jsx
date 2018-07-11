@@ -99,18 +99,22 @@ export default class MainLayout extends React.Component {
     console.log(pathname)
     let background_color
     let text_color
+    let location_class
     if (pathname.includes("/work/")) {
       background_color = "#F9F9F9"
       text_color = "#111310"
+      location_class = "work"
     } else if (pathname === "/about/") {
       background_color = "#00DEA1"
       text_color = "#FFFFFF"
+      location_class = "about"
     } else {
       background_color = "#111310"
       text_color = "#FFFFFF"
+      location_class = "index"
     }
     return (
-      <div style={{ backgroundColor: background_color, color: text_color }}>
+      <div className={location_class} style={{ backgroundColor: background_color, color: text_color }}>
         <Helmet>
           <title>{`${config.siteTitle} |  ${this.getLocalTitle()}`}</title>
           <meta name="description" content={config.siteDescription} />
