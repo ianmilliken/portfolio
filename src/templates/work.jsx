@@ -11,6 +11,15 @@ import "./work.css"
 import Transition from "../components/Transition/Transition"
 import Arrow from "../components/Icons/Arrow"
 
+import rehypeReact from "rehype-react" 
+import Video from "../components/Video/Video" 
+ 
+
+const renderAst = new rehypeReact({ 
+  createElement: React.createElement, 
+  components: { "customvideo": Video } 
+}).Compiler 
+
 
 class El extends React.Component {
 
@@ -87,8 +96,9 @@ export default class PostTemplate extends React.Component {
 							))}
 						</ul>
 					</div>
-					<div className="container gutter-top">
-						<div dangerouslySetInnerHTML={{ __html: postNode.html }} />
+					<div className="content gutter-top">
+						{/* <div dangerouslySetInnerHTML={{ __html: postNode.html }} /> */}
+						<div>{renderAst(postNode.htmlAst)}</div>
 					</div>
 				</div>
 			</Transition>
@@ -102,6 +112,7 @@ export const pageQuery = graphql`
 	query WorkPostBySlug($slug: String!) {
 		markdownRemark(fields: { slug: { eq: $slug } }) {
 			html
+			htmlAst
 			timeToRead
 			excerpt
 			frontmatter {
