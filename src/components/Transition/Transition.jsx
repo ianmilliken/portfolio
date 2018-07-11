@@ -32,7 +32,7 @@ class Transition extends React.Component {
   render() {
     const transitionProps = {
       timeout: {
-        enter: 0,
+        enter: timeout,
         exit: timeout,
       },
       appear: true,
@@ -42,11 +42,8 @@ class Transition extends React.Component {
     return (
       <ReactTransition {...transitionProps}>
         {status => (
-          <div
-            style={{
-              ...getTransitionStyle({ status, timeout }),
-            }}
-          >
+          <div className={`wipe wipe--${status}`}>
+            <div className={`anim anim--${status}`}></div>
             {this.props.children}
           </div>
         )}

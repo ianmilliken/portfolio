@@ -25,7 +25,9 @@ class About extends Component {
 			postList.map(post => (
 				<div key={post} className="container">
 					<div className="banner">
-						<h1 className="header-offset">{post.title}</h1>
+						<div className="header-offset">
+							<h1 className="anim-title">{post.title}</h1>
+						</div>
 						<div dangerouslySetInnerHTML={{ __html: post.html }}></div>
 					</div>
 					<div className="content">

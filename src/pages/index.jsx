@@ -19,18 +19,18 @@ class Index extends React.Component {
           <div className="full-height grid-banner">
             <div className="container">
               <div className="center">
-                <h1 className="title">Hello. G’day. Ayup.</h1>
-                <p className="p--large">My name’s Ian. I design & build awesome products & brands for innovative businesses around the globe.</p>
+                <h1 className="title anim-title delay-200">Hello. G’day. Ayup.</h1>
+                <p className="p--large anim-title delay-400">My name’s Ian. I design & build awesome products & brands for innovative businesses around the globe.</p>
               </div>
             </div>
             <div className="status">
               <div className="status__l">
-                <div className="label">Status</div>
-                <div>Available for hire</div>
+                <div className="label anim-title delay-600">Status</div>
+                <div className="anim-title delay-700">Available for hire</div>
               </div>
               <div className="status__r">
-                <div className="label">Location</div>
-                <div>Leeds, UK</div>
+                <div className="label anim-title delay-800">Location</div>
+                <div className="anim-title delay-900">Leeds, UK</div>
               </div>
             </div>
           </div>
