@@ -9,6 +9,7 @@
   --uiFont: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   /* Color Pallete */
   --brandColor: #00DEA1;
+	--brandBlack: #111310;
 }
 
 
@@ -277,6 +278,45 @@ main {
   & p {
     font-size: 1.8rem;
   }
+}
+
+.contact-panel {
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 2rem;
+	align-content: center;
+	margin: 2rem;
+	height: calc(100% - 4rem);
+	width: 25%;
+	text-align: center;
+	background-color: #000000;
+	color: white;
+	transform: translateX(-110%);
+	transition: all 400ms ease;
+	&.is-active {
+		transform: translateX(0%);
+		width: calc(100% - 4rem);
+	}
+}
+
+.overlay {
+	position: fixed;
+	z-index: -1;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: var(--brandColor);
+	opacity: 0;
+	transition: opacity 300ms ease;
+	will-change: opacity;
+	&.is-active {
+		z-index: 0;
+		opacity: 0.25;
+	}
 }
 
 
