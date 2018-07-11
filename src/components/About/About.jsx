@@ -23,8 +23,8 @@ class About extends Component {
 		const postList = this.getPostList()
 	  	return (
 			postList.map(post => (
-				<div className="container">
-					<div key={post} className="banner">
+				<div key={post} className="container">
+					<div className="banner">
 						<h1 className="header-offset">{post.title}</h1>
 						<div dangerouslySetInnerHTML={{ __html: post.html }}></div>
 					</div>
