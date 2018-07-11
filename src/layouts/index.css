@@ -61,6 +61,9 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+strong {
+  font-weight: 700;
+}
 
 
 /* 
@@ -172,6 +175,10 @@ a {
 	align-items: center;
 }
 
+.gutter-top {
+  margin-top: 6.8rem;
+}
+
 .status {
 	position: absolute;
 	bottom: 0;
@@ -200,6 +207,7 @@ a {
   position: fixed;
   opacity: 0.1;
   mix-blend-mode: lighten;
+  will-change: transform;
   &--left {
     left: 20%;
     top: -15%;

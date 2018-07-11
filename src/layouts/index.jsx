@@ -10,12 +10,18 @@ import Footer from "../components/Footer/Footer"
 import Triangle from "../components/Icons/Triangle"
 import Circle from "../components/Icons/Circle"
 
+
 export default class MainLayout extends React.Component {
+
   constructor(props) {
     super(props)
+    this.state = {
+      contactPanel: false
+    }
   }
+
   componentDidMount() {
-    var circle_animation = anime({
+    /*var circle_animation = anime({
       targets: '.shape--left',
       translateX: function() { return anime.random(-100, 25) + '%'; },
       translateY: function() { return anime.random(-75, 150) + '%'; },
@@ -32,38 +38,9 @@ export default class MainLayout extends React.Component {
       direction: 'alternate',
       loop: true,
       easing: 'easeInCubic'
-    });
+    });*/
   }
-  getBackgroundColor() {
-    const pathPrefix = config.pathPrefix ? config.pathPrefix : "/";
-    const currentPath = this.props.location.pathname
-      .replace(pathPrefix, "")
-      .replace("/", "");
-    let color
-    if (currentPath === "") {
-      color = "#111310"
-    } else if (currentPath === "about/") {
-      color = "#00DEA1"
-    } else if (currentPath === "work/") {
-      color = "#F9F9F9"
-    }
-    return color
-  }
-  getColor() {
-    const pathPrefix = config.pathPrefix ? config.pathPrefix : "/";
-    const currentPath = this.props.location.pathname
-      .replace(pathPrefix, "")
-      .replace("/", "");
-    let color
-    if (currentPath === "") {
-      color = "#FFFFFF"
-    } else if (currentPath === "about/") {
-      color = "#FFFFFF"
-    } else if (currentPath === "work/") {
-      color = "#111310"
-    }
-    return color
-  }
+
   getLocalTitle() {
     function capitalize(string) {
       return string.charAt(0).toUpperCase() + string.slice(1);
@@ -100,6 +77,7 @@ export default class MainLayout extends React.Component {
     }
     return title;
   }
+
   getLocalMenu() {
     function capitalize(string) {
       return string.charAt(0).toUpperCase() + string.slice(1);
@@ -114,10 +92,25 @@ export default class MainLayout extends React.Component {
     }
     return menu;
   }
+
   render() {
     const { children } = this.props;
+    const pathname = this.props.location.pathname
+    console.log(pathname)
+    let background_color
+    let text_color
+    if (pathname.includes("/work/")) {
+      background_color = "#F9F9F9"
+      text_color = "#111310"
+    } else if (pathname === "/about/") {
+      background_color = "#00DEA1"
+      text_color = "#FFFFFF"
+    } else {
+      background_color = "#111310"
+      text_color = "#FFFFFF"
+    }
     return (
-      <div style={{ backgroundColor: this.getBackgroundColor(), color: this.getColor() }}>
+      <div style={{ backgroundColor: background_color, color: text_color }}>
         <Helmet>
           <title>{`${config.siteTitle} |  ${this.getLocalTitle()}`}</title>
           <meta name="description" content={config.siteDescription} />
