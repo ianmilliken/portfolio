@@ -13,11 +13,15 @@ import Arrow from "../components/Icons/Arrow"
 
 import rehypeReact from "rehype-react" 
 import Video from "../components/Video/Video" 
+import Header from "../components/Editorial/Header/Header" 
  
 
-const renderAst = new rehypeReact({ 
-  createElement: React.createElement, 
-  components: { "customvideo": Video } 
+const RenderAst = new rehypeReact({ 
+	createElement: React.createElement, 
+	components: {
+		"customvideo": Video,
+		"c-header": Header
+	} 
 }).Compiler 
 
 
@@ -74,9 +78,9 @@ export default class PostTemplate extends React.Component {
 							<h1 className="work__title anim-title">{post.title}</h1>
 						</El>
 						<div className="work__intro">
-							{post.intro.split("\n").map( (val, i) => { 
+							{post.intro !== null ? post.intro.split("\n").map( (val, i) => { 
 								return <p key={i} className={"anim-title delay-" + (200 * (i + 1))}>{val}</p>
-							})}
+							}) : ""}
 						</div>
 						{ post.link ? <div className="work__link anim-title delay-400"><a href={post.link}>{post.link_text} <Arrow classes="work__arrow" /></a></div> : "" }
 					</div>
@@ -98,7 +102,7 @@ export default class PostTemplate extends React.Component {
 					</div>
 					<div className="content gutter-top">
 						{/* <div dangerouslySetInnerHTML={{ __html: postNode.html }} /> */}
-						<div>{renderAst(postNode.htmlAst)}</div>
+						<div>{RenderAst(postNode.htmlAst)}</div>
 					</div>
 				</div>
 			</Transition>
