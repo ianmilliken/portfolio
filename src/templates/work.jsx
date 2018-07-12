@@ -11,12 +11,12 @@ import "./work.css"
 import Transition from "../components/Transition/Transition"
 import Arrow from "../components/Icons/Arrow"
 
-import rehypeReact from "rehype-react" 
+import RehypeReact from "rehype-react" 
 import Video from "../components/Video/Video" 
 import Header from "../components/Editorial/Header/Header" 
  
 
-const RenderAst = new rehypeReact({ 
+const RenderAst = new RehypeReact({ 
 	createElement: React.createElement, 
 	components: {
 		"customvideo": Video,
