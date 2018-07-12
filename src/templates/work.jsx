@@ -8,6 +8,7 @@ import Transition from "../components/Transition/Transition"
 import Arrow from "../components/Icons/Arrow"
 import Video from "../components/Video/Video" 
 import Header from "../components/Editorial/Header/Header" 
+import Grid from "../components/Editorial/Grid/Grid"
 
 import config from "../../data/SiteConfig"
 import "./work.css"
@@ -16,8 +17,9 @@ import "./work.css"
 const RenderAst = new RehypeReact({ 
 	createElement: React.createElement, 
 	components: {
-		"customvideo": Video,
-		"c-header": Header
+		"c-video": Video,
+		"c-header": Header,
+		"c-grid": Grid
 	} 
 }).Compiler 
 
@@ -75,26 +77,26 @@ export default class PostTemplate extends React.Component {
 							<h1 className="work__title anim-title">{post.title}</h1>
 						</El>
 						<div className="work__intro">
-							{post.intro !== null ? post.intro.split("\n").map( (val, i) => {
+							{ post.intro !== null ? post.intro.split("\n").map( (val, i) => {
 								return <p key={val} className="`anim-title delay-${(200 * (i + 1))}`">{val}</p>
-							}) : ""}
+							}) : "" }
 						</div>
 						{ post.link ? <div className="work__link anim-title delay-400"><a href={post.link}>{post.link_text} <Arrow classes="work__arrow" /></a></div> : "" }
 					</div>
 					<div className="container work__list gutter-top">
 						<strong className="anim-title delay-600">Scope: </strong>
 						<ul className="scope__list">
-							{ post.scope.map( val => (
+							{ post.scope !== null ? post.scope.map( val => (
 								<li key={val} className="scope__item anim-title delay-600">{val}</li>
-							))}
+							)) : "" }
 						</ul>
 					</div>
 					<div className="container work__list">
 						<strong className="anim-title delay-800">Stack: </strong>
 						<ul className="scope__list">
-							{ post.stack.map( val => (
+							{ post.stack !== null ? post.stack.map( val => (
 								<li key={val} className="scope__item anim-title delay-800">{val}</li>
-							))}
+							)) : "" }
 						</ul>
 					</div>
 					<div className="content gutter-top">
