@@ -78,7 +78,7 @@ export default class PostTemplate extends React.Component {
 						</El>
 						<div className="work__intro">
 							{ post.intro !== null ? post.intro.split("\n").map( (val, i) => {
-								return <p key={val} className="`anim-title delay-${(200 * (i + 1))}`">{val}</p>
+								return <p key={val} className={`anim-title delay-${(200 * (i + 1))}`}>{val}</p>
 							}) : "" }
 						</div>
 						{ post.link ? <div className="work__link anim-title delay-400"><a href={post.link}>{post.link_text} <Arrow classes="work__arrow" /></a></div> : "" }
