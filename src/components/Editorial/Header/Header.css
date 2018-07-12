@@ -1,13 +1,14 @@
-.work .c-header {
-	max-width: 88rem;
-	margin-left: auto;
-	margin-right: auto;
-}
-
 .c-header {
 	display: grid;
 	grid-gap: 4rem;
 	grid-template-columns: 1fr 2fr;
 	align-items: end;
+	margin-top: 6.8rem;
 	margin-bottom: 6.8rem;
+}
+
+.work .c-header {
+	max-width: 88rem;
+	margin-left: auto;
+	margin-right: auto;
 }

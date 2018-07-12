@@ -6,21 +6,24 @@
 
 .work__intro {
 	grid-row-end: span 2;
+
 	& > p {
 		font-size: 1.8rem;
 		font-weight: 300;
-		color: #4D4B4B;
+		color: #4d4b4b;
 	}
 }
 
 .work__link {
 	align-self: end;
+
 	& > a {
 		position: relative;
 		display: inline-block;
 		padding-bottom: 0.8rem;
 		text-decoration: none;
 	}
+
 	& > a::before {
 		content: "";
 		position: absolute;
@@ -41,12 +44,9 @@
 	font-size: 1.4rem;
 }
 
-.scope__list {
-	
-}
-
 .scope__item {
 	display: inline-block;
+
 	&:not(:last-of-type)::after {
 		content: ",";
 		padding-right: 0.4em;
@@ -54,7 +54,7 @@
 }
 
 .content {
-	& h1, 
+	& h1,
 	& h2,
 	& h3,
 	& h4,

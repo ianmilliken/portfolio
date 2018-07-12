@@ -4,20 +4,22 @@
 	/* Golden Rule */
 	--baseHtmlSize: 62.5%;
 	--baseBodySize: 1.6rem;
+
 	/* Typeography */
 	--brandFont: 'Nunito Sans', sans-serif;
 	--uiFont: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+
 	/* Color Pallete */
-	--brandColor: #00DEA1;
+	--brandColor: #00dea1;
 	--brandBlack: #111310;
 }
 
+/* stylelint-disable */
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
 	v2.0 | 20110126
 	License: none (public domain)
 */
-
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -39,47 +41,54 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+
 body {
 	line-height: 1;
 }
+
 ol, ul {
 	list-style: none;
 }
+
 blockquote, q {
 	quotes: none;
 }
+
 blockquote:before, blockquote:after,
 q:before, q:after {
 	content: '';
 	content: none;
 }
+
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
 strong {
 	font-weight: 700;
 }
 
+/* stylelint-enable */
 
-/* 
+/*
  *
  * Custom Styles
  *
  */
 
-
 * {
 	box-sizing: border-box;
-	font-feature-settings: "kern", "liga", "clig", "calt"; 
+	font-feature-settings: "kern", "liga", "clig", "calt";
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-	text-rendering: optimizeLegibility; 
+	text-rendering: optimizeLegibility;
 }
 
 html {
@@ -92,7 +101,7 @@ body {
 	font-family: var(--brandFont);
 	font-size: var(--baseBodySize);
 	line-height: 1.4;
-	background-color: #00DEA1;
+	background-color: var(--brandColor);
 }
 
 h1 {
@@ -103,6 +112,7 @@ h1 {
 
 h2 {
 	font-size: 3.7rem;
+	font-weight: 700;
 	line-height: 1.2;
 }
 
@@ -118,8 +128,7 @@ main {
 	position: relative; /* So content is selectable over fixed animated shapes */
 }
 
-
-/* 
+/*
  *
  * App Styles
  *
@@ -140,13 +149,11 @@ main {
 	pointer-events: none;
 }
 
-
-/* 
+/*
  *
  * Block positioning
  *
  */
-
 
 .container {
 	margin-left: auto;
@@ -191,6 +198,7 @@ main {
 	grid-template-columns: 1fr 1fr;
 	width: 100%;
 	padding: 6rem;
+
 	&__r {
 		text-align: right;
 	}
@@ -202,6 +210,7 @@ main {
 	letter-spacing: 0.12em;
 	text-transform: uppercase;
 	opacity: 0.6;
+
 	&--large {
 		font-size: 1.2rem;
 		opacity: 1;
@@ -212,10 +221,12 @@ main {
 	position: fixed;
 	opacity: 0.1;
 	will-change: transform;
+
 	&--left {
 		left: 20%;
 		top: -15%;
 	}
+
 	&--right {
 		right: -10%;
 		top: 33%;
@@ -235,13 +246,11 @@ main {
 	mix-blend-mode: overlay;
 }
 
-
-/* 
+/*
  *
  * Editorial
  *
  */
-
 
 .title {
 	& + * {
@@ -258,25 +267,28 @@ main {
 	padding-top: 20vh;
 }
 
-.banner {
-	& p {
-		font-size: 2.1rem;
-	}
-	& p:first-of-type {
-		margin-top: 3.6rem;
-	}
-}
-
 .content {
 	& h2 {
 		margin-top: 8.6rem;
 		font-weight: 700;
 	}
+
+	& p {
+		font-size: 1.8rem;
+	}
+
 	& h2 + p:first-of-type {
 		margin-top: 1.6rem;
 	}
+}
+
+.banner {
 	& p {
-		font-size: 1.8rem;
+		font-size: 2.1rem;
+	}
+
+	& p:first-of-type {
+		margin-top: 3.6rem;
 	}
 }
 
@@ -296,6 +308,7 @@ main {
 	color: white;
 	transform: translateX(-110%);
 	transition: all 400ms ease;
+
 	&.is-active {
 		transform: translateX(0%);
 		width: calc(100% - 4rem);
@@ -313,22 +326,22 @@ main {
 	opacity: 0;
 	transition: opacity 300ms ease;
 	will-change: opacity;
+
 	&.is-active {
 		z-index: 0;
 		opacity: 0.25;
 	}
 }
 
-
-/* 
+/*
  *
  * Animations
  *
  */
 
-
 .animate-in {
 	overflow: hidden;
+
 	& > * {
 		display: inline-block;
 		transform: translateY(-100%);
@@ -347,6 +360,7 @@ main {
 
 .enter--left {
 	overflow: hidden;
+
 	& > * {
 		transform: translateX(-100%);
 		opacity: 0;
@@ -359,10 +373,12 @@ main {
 		transform: translateY(0%);
 		opacity: 1;
 	}
+
 	& .fade-in > * {
 		transform: scale3d(1, 1, 1) translateX(0%);
 		opacity: 1;
 	}
+
 	& .enter--left > * {
 		transform: translateX(0%);
 		opacity: 1;
@@ -370,19 +386,20 @@ main {
 }
 
 .wipe--entering {
-	/*animation-name: wipeEnter;
-	animation-duration: 0.4s;*/
+	/* animation-name: wipeEnter;
+	animation-duration: 0.4s; */
 }
 
 .wipe--exiting {
-	/*animation-name: wipeExit;
-	animation-duration: 0.4s;*/
+	/* animation-name: wipeExit;
+	animation-duration: 0.4s; */
 }
 
 @keyframes wipeEnter {
 	from {
 		transform: translateX(100%);
 	}
+
 	to {
 		transform: translateX(0%);
 	}
@@ -392,6 +409,7 @@ main {
 	from {
 		transform: translateX(0%);
 	}
+
 	to {
 		transform: translateX(-100%);
 	}
@@ -418,6 +436,7 @@ main {
 	opacity: 0;
 	transform: translateY(15%);
 	transition: all 400ms ease;
+
 	&::before {
 		content: "";
 		position: absolute;
@@ -434,15 +453,12 @@ main {
 	& .anim-title {
 		opacity: 1;
 		transform: translateY(0%);
+
 		&::before {
 			height: 0%;
 			transform: translateY(100%);
 		}
 	}
-}
-
-.anim--entered {
-
 }
 
 .anim--exiting {
@@ -464,17 +480,18 @@ main {
 .delay-900 { transition-delay: 900ms; }
 .delay-1000 { transition-delay: 1s; }
 
-
 @keyframes animEnter {
 	0% {
 		background-color: var(--brandColor);
-		height: 0vh;
+		height: 0;
 		transform: translateY(-100%);
 	}
+
 	50% {
 		height: 400vh;
 		transform: translateY(0%);
 	}
+
 	100% {
 		background-color: var(--brandColor);
 		height: 100vh;
@@ -488,18 +505,20 @@ main {
 		height: 100vh;
 		transform: translateY(100%);
 	}
+
 	50% {
 		height: 400vh;
 		transform: translateY(0%);
 	}
+
 	100% {
 		background-color: var(--brandBlack);
-		height: 0vh;
+		height: 0;
 		transform: translateY(-100%);
 	}
 }
 
-/* 
+/*
  *
  * Visibility
  *
@@ -507,5 +526,5 @@ main {
 
 .is-hidden {
 	display: none;
-	visibility: hidden; 
+	visibility: hidden;
 }

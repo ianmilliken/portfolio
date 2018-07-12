@@ -1,16 +1,17 @@
+.grid {
+	display: grid;
+	grid-gap: 4rem;
+}
+
 .work .grid {
 	max-width: 88rem;
 	margin-left: auto;
 	margin-right: auto;
 }
 
-.grid {
-	display: grid;
-	grid-gap: 4rem;
-}
-
 .grid--2 {
 	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 42rem 42rem;
 }
 
 .grid--3 {
@@ -22,6 +23,12 @@
 }
 
 .grid .gatsby-resp-image-link {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	max-width: 42rem;
+	max-height: 42rem;
 	padding: 4rem;
 	background-color: #ffffff;
 }

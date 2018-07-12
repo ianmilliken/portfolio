@@ -3,10 +3,11 @@
 	grid-gap: 2rem;
 	grid-template-columns: 1fr 1fr 1fr;
 	margin-top: 3.6rem;
+
 	&__item {
 		display: block;
 		padding: 2rem;
 		text-align: center;
-		background-color: #01CF97;
+		background-color: #01cf97;
 	}
 }
