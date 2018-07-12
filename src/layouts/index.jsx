@@ -93,7 +93,7 @@ export default class MainLayout extends React.Component {
 
   	render() {
 		const { children } = this.props
-		const pathname = this.props.location.pathname
+		const { pathname } = this.props.location
 		let backgroundColor
 		let textColor
 		let locationClass
