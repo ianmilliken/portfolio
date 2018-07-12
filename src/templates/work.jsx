@@ -99,7 +99,7 @@ export default class PostTemplate extends React.Component {
 							)) : "" }
 						</ul>
 					</div>
-					<div className="content gutter-top">
+					<div className="gutter-top">
 						{/* <div dangerouslySetInnerHTML={{ __html: postNode.html }} /> */}
 						<div>{RenderAst(postNode.htmlAst)}</div>
 					</div>

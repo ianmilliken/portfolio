@@ -1,0 +1,13 @@
+.work .c-header {
+	max-width: 88rem;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.c-header {
+	display: grid;
+	grid-gap: 4rem;
+	grid-template-columns: 1fr 2fr;
+	align-items: end;
+	margin-bottom: 6.8rem;
+}

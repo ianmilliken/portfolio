@@ -1,5 +1,12 @@
+.work .grid {
+	max-width: 88rem;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 .grid {
 	display: grid;
+	grid-gap: 4rem;
 }
 
 .grid--2 {
@@ -12,4 +19,9 @@
 
 .grid--4 {
 	grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.grid .gatsby-resp-image-link {
+	padding: 4rem;
+	background-color: #ffffff;
 }
