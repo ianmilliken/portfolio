@@ -1,9 +1,11 @@
 import React from "react"
 
+
 class Arrow extends React.Component {
 	constructor(props) {
 		super(props)
 	}
+	
 	render() {
 		return (
 			<svg className={this.props.classes} width="12px" height="20px" viewBox="0 0 12 20" version="1.1">
@@ -16,5 +18,6 @@ class Arrow extends React.Component {
 		)
 	}
 }
+
 
 export default Arrow

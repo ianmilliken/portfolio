@@ -2,7 +2,8 @@ import React from "react"
 import Link from "gatsby-link"
 import Logo from "../../assets/logo.svg"
 import UserLinks from "../UserLinks/UserLinks"
-import "./Header.css";
+import "./Header.css"
+
 
 class Header extends React.Component {
 	render() {
@@ -15,5 +16,6 @@ class Header extends React.Component {
 		)
 	}
 }
+
 
 export default Header

@@ -1,10 +1,13 @@
 import React, { Component } from "react"
 import "./About.css"
 
+
 class About extends Component {
+
 	constructor(props) {
 		super(props)
 	}
+
 	getPostList() {
 	    const postList = []
 	    this.props.data.forEach(edge => {
@@ -47,4 +50,5 @@ class About extends Component {
 	}
 }
 
-export default About;
+
+export default About

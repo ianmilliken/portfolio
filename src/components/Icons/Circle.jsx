@@ -1,9 +1,11 @@
 import React from "react"
 
+
 class Circle extends React.Component {
 	constructor(props) {
 		super(props)
 	}
+
 	render() {
 		return (
 			<svg className={this.props.classes ? this.props.classes : ""} width="456px" height="456px" viewBox="0 0 456 456" version="1.1">
@@ -16,5 +18,6 @@ class Circle extends React.Component {
 		)
 	}
 }
+
 
 export default Circle

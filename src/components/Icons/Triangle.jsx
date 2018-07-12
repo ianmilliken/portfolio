@@ -1,9 +1,11 @@
 import React from "react"
 
+
 class Triangle extends React.Component {
 	constructor(props) {
 		super(props)
 	}
+
 	render() {
 		return (
 			<svg className={this.props.classes ? this.props.classes : ""} width="350px" height="378px" viewBox="0 0 350 378" version="1.1">
@@ -16,5 +18,6 @@ class Triangle extends React.Component {
 		)
 	}
 }
+
 
 export default Triangle
