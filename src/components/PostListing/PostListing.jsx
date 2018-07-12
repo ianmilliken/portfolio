@@ -26,8 +26,8 @@ class PostListing extends React.Component {
 		const postList = this.getPostList()
 		return (
 			<div className="container" style={{ transform: 'translateY(-10rem)' }}>
-			<span className="scroll-indicator"></span>
-			<h4 className="label label--large center">Selected Works</h4>
+				<span className="scroll-indicator" />
+				<h4 className="label label--large center">Selected Works</h4>
 				<ul className="list">
 					{// Your post list here.
 					postList.map(post => (

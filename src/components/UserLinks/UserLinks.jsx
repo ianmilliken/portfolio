@@ -11,7 +11,7 @@ class UserLinks extends Component {
 			<li key={link.label}>
 				<a href={link.url}>
 					{labeled ? <span>{link.label}</span> : ""}
-					{icon ? <i className={link.iconClassName}></i> : ""}
+					{icon ? <i className={link.iconClassName} /> : ""}
 				</a>
 			</li>
 		));

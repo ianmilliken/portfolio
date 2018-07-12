@@ -1,14 +1,16 @@
 import React from "react"
 import Helmet from "react-helmet"
 import anime from "animejs"
-import config from "../../data/SiteConfig"
-import "./index.css"
-import "./font-awesome.css"
+
 import Header from "../components/Header/Header"
 import Nav from "../components/Nav/Nav"
 import Footer from "../components/Footer/Footer"
 import Triangle from "../components/Icons/Triangle"
 import Circle from "../components/Icons/Circle"
+
+import config from "../../data/SiteConfig"
+import "./index.css"
+import "./font-awesome.css"
 
 
 export default class MainLayout extends React.Component {
@@ -22,7 +24,7 @@ export default class MainLayout extends React.Component {
 	}
 
 	componentDidMount() {
-	/*var circle_animation = anime({
+	/* var circle_animation = anime({
 	  targets: '.shape--left',
 	  translateX: function() { return anime.random(-100, 25) + '%'; },
 	  translateY: function() { return anime.random(-75, 150) + '%'; },
@@ -39,15 +41,7 @@ export default class MainLayout extends React.Component {
 	  direction: 'alternate',
 	  loop: true,
 	  easing: 'easeInCubic'
-	});*/
-	}
-
-	handleContactLink(e) {
-		e.preventDefault()
-		const { contact} = this.state
-		this.setState({
-			contact: contact ? false : true
-		})
+	}); */
 	}
 
 	getLocalTitle() {
@@ -80,9 +74,6 @@ export default class MainLayout extends React.Component {
 	}
 
 	getLocalMenu() {
-		function capitalize(string) {
-			return string.charAt(0).toUpperCase() + string.slice(1)
-		}
 		const pathPrefix = config.pathPrefix ? config.pathPrefix : "/"
 		const currentPath = this.props.location.pathname.replace(pathPrefix, "").replace("/", "")
 		let menu = 0;
@@ -92,42 +83,50 @@ export default class MainLayout extends React.Component {
 		return menu
 	}
 
+	handleContactLink(e) {
+		e.preventDefault()
+		const { contact} = this.state
+		this.setState({
+			contact: contact ? false : true
+		})
+	}
+
   	render() {
 		const { children } = this.props
 		const pathname = this.props.location.pathname
-		let background_color
-		let text_color
-		let location_class
+		let backgroundColor
+		let textColor
+		let locationClass
 		if (pathname.includes("/work/")) {
-			background_color = "#F9F9F9"
-			text_color = "#111310"
-			location_class = "work"
+			backgroundColor = "#F9F9F9"
+			textColor = "#111310"
+			locationClass = "work"
 		} else if (pathname === "/about/") {
-			background_color = "#00DEA1"
-			text_color = "#FFFFFF"
-			location_class = "about"
+			backgroundColor = "#00DEA1"
+			textColor = "#FFFFFF"
+			locationClass = "about"
 		} else {
-			background_color = "#111310"
-			text_color = "#FFFFFF"
-			location_class = "index"
+			backgroundColor = "#111310"
+			textColor = "#FFFFFF"
+			locationClass = "index"
 		}
 		return (
-			<div className={location_class} style={{ backgroundColor: background_color, color: text_color }}>
+			<div className={locationClass} style={{ backgroundColor: backgroundColor, color: textColor }}>
 				<Helmet>
 					<title>{`${config.siteTitle} |  ${this.getLocalTitle()}`}</title>
 					<meta name="description" content={config.siteDescription} />
 				</Helmet>
-				<Circle classes="shape shape--left" color="#00DEA1"/>
-				<Triangle classes="shape shape--right" color="#00DEA1"/>
+				<Circle classes="shape shape--left" color="#00DEA1" />
+				<Triangle classes="shape shape--right" color="#00DEA1" />
 				<Header config={config} />
 				<Nav menu={this.getLocalMenu()} onContactLink={this.handleContactLink} />
 				<main>{children()}</main>
 				<Footer config={config} />
-				<div className={`overlay ${ this.state.contact ? `is-active` : ``}`}></div>
+				<div className={`overlay ${ this.state.contact ? `is-active` : ``}`} />
 				<div className={`contact-panel ${ this.state.contact ? `is-active` : ``}`}>
 					<h2>Get in touch</h2>
 				</div>
-	  		</div>
+			</div>
 		)
 	}
 }

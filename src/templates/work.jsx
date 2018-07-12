@@ -1,19 +1,16 @@
 import React from "react"
 import Helmet from "react-helmet"
 import Waypoint from "react-waypoint"
-import UserInfo from "../components/UserInfo/UserInfo"
-import Disqus from "../components/Disqus/Disqus"
-import PostTags from "../components/PostTags/PostTags"
-import SocialLinks from "../components/SocialLinks/SocialLinks"
+import RehypeReact from "rehype-react" 
 import SEO from "../components/SEO/SEO"
-import config from "../../data/SiteConfig"
-import "./work.css"
+
 import Transition from "../components/Transition/Transition"
 import Arrow from "../components/Icons/Arrow"
-
-import RehypeReact from "rehype-react" 
 import Video from "../components/Video/Video" 
 import Header from "../components/Editorial/Header/Header" 
+
+import config from "../../data/SiteConfig"
+import "./work.css"
  
 
 const RenderAst = new RehypeReact({ 
@@ -78,8 +75,8 @@ export default class PostTemplate extends React.Component {
 							<h1 className="work__title anim-title">{post.title}</h1>
 						</El>
 						<div className="work__intro">
-							{post.intro !== null ? post.intro.split("\n").map( (val, i) => { 
-								return <p key={i} className={"anim-title delay-" + (200 * (i + 1))}>{val}</p>
+							{post.intro !== null ? post.intro.split("\n").map( (val, i) => {
+								return <p key={val} className="`anim-title delay-${(200 * (i + 1))}`">{val}</p>
 							}) : ""}
 						</div>
 						{ post.link ? <div className="work__link anim-title delay-400"><a href={post.link}>{post.link_text} <Arrow classes="work__arrow" /></a></div> : "" }
@@ -95,8 +92,8 @@ export default class PostTemplate extends React.Component {
 					<div className="container work__list">
 						<strong className="anim-title delay-800">Stack: </strong>
 						<ul className="scope__list">
-							{ post.stack.map( (val, i) => (
-								<li key={i} className="scope__item anim-title delay-800">{val}</li>
+							{ post.stack.map( val => (
+								<li key={val} className="scope__item anim-title delay-800">{val}</li>
 							))}
 						</ul>
 					</div>
@@ -111,14 +108,12 @@ export default class PostTemplate extends React.Component {
 }
 
 
-/* eslint no-undef: "off"*/
+/* eslint no-undef: "off" */
 export const pageQuery = graphql`
 	query WorkPostBySlug($slug: String!) {
 		markdownRemark(fields: { slug: { eq: $slug } }) {
 			html
 			htmlAst
-			timeToRead
-			excerpt
 			frontmatter {
 				title
 				date

@@ -7,9 +7,7 @@ import Transition from "../components/Transition/Transition"
 
 
 class Index extends React.Component {
-	constructor(props) {
-		super(props)
-	}
+
 	render() {
 		const postEdges = this.props.data.allMarkdownRemark.edges;
 		return (
@@ -59,12 +57,9 @@ export const pageQuery = graphql`
 					fields {
 						slug
 					}
-					excerpt
-					timeToRead
 					frontmatter {
 						title
 						tags
-						cover
 						date(formatString: "YYYY")
 					}
 				}

@@ -4,12 +4,8 @@ import "./Video.css"
  
  
 export default class Video extends React.Component {
-	constructor(props) {
-		super(props)
-	}
 
 	render() {
-		console.log(this.props)
 		return (
 			<div className="video-wrapper">
 				<div className="video">

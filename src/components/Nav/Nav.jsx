@@ -20,11 +20,11 @@ class Nav extends React.Component {
 			return (
 				<nav className="nav">
 					<div className="nav__link nav__link--l">
-						<span className="nav__line"></span>
+						<span className="nav__line" />
 						<a href="/" onClick={this.handleClick}><span>Contact</span></a>
 					</div>
 					<div className="nav__link nav__link--r">
-						<span className="nav__line"></span>
+						<span className="nav__line" />
 						<Link to="/about/">
 							<span>About</span>
 						</Link>
@@ -35,13 +35,13 @@ class Nav extends React.Component {
 			return (
 				<nav className="nav">
 					<div className="nav__link nav__link--l">
-						<span className="nav__line"></span>
+						<span className="nav__line" />
 						<Link to="/">
 							<span>Previous</span>
 						</Link>
 					</div>
 					<div className="nav__link nav__link--r">
-						<span className="nav__line"></span>
+						<span className="nav__line" />
 						<Link to="/">
 							<span>Next</span>
 						</Link>

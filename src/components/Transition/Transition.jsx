@@ -5,14 +5,18 @@ import { historyExitingEventType, timeout } from "../../../gatsby-browser"
 
 
 class Transition extends React.Component {
+
+	static getDerivedStateFromProps({ exiting }) {
+		if (exiting) {
+			return { exiting: false }
+		}
+		return null
+	}
+
 	constructor(props) {
 		super(props)
 		this.state = { exiting: false }
 		this.listenerHandler = this.listenerHandler.bind(this)
-	}
-
-	listenerHandler(event) {
-		this.setState({ exiting: true })
 	}
 
 	componentDidMount() {
@@ -23,11 +27,8 @@ class Transition extends React.Component {
 		window.removeEventListener(historyExitingEventType, this.listenerHandler)
 	}
 
-	static getDerivedStateFromProps({ exiting }) {
-		if (exiting) {
-			return { exiting: false }
-		}
-		return null
+	listenerHandler(event) {
+		this.setState({ exiting: true })
 	}
 
 	render() {
@@ -44,7 +45,7 @@ class Transition extends React.Component {
 			<ReactTransition {...transitionProps}>
 				{status => (
 					<div className={`wipe wipe--${status}`}>
-						<div className={`anim anim--${status}`}></div>
+						<div className={`anim anim--${status}`} />
 						{this.props.children}
 					</div>
 				)}

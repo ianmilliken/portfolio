@@ -4,10 +4,6 @@ import "./About.css"
 
 class About extends Component {
 
-	constructor(props) {
-		super(props)
-	}
-
 	getPostList() {
 	    const postList = []
 	    this.props.data.forEach(edge => {
@@ -31,7 +27,7 @@ class About extends Component {
 						<div className="header-offset">
 							<h1 className="anim-title">{post.title}</h1>
 						</div>
-						<div dangerouslySetInnerHTML={{ __html: post.html }}></div>
+						<div dangerouslySetInnerHTML={{ __html: post.html }} />
 					</div>
 					<div className="content">
 						<h2>{post.skill_title}</h2>
