@@ -1,4 +1,7 @@
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/cc729f1333e3400aa511a67a21ec9e3c)](https://www.codacy.com/app/ianmilliken/portfolio?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=ianmilliken/portfolio&amp;utm_campaign=Badge_Grade)
+[![BCH compliance](https://bettercodehub.com/edge/badge/ianmilliken/portfolio?branch=master)](https://bettercodehub.com/)
+[![Build Status](https://travis-ci.org/ianmilliken/portfolio.svg?branch=master)](https://travis-ci.org/ianmilliken/portfolio)
+
 
 <div align="center">
     <img src="static/logos/logo-1024.png" alt="Logo" width='200px' height='200px'/>
