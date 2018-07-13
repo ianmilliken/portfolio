@@ -45,6 +45,7 @@
   },
   "devDependencies": {
     "cli-glob": "^0.1.0",
+    "csslint": "^1.0.5",
     "eslint": "^4.17.0",
     "eslint-config-airbnb": "^16.1.0",
     "eslint-config-prettier": "^2.9.0",
@@ -75,9 +76,11 @@
     "clean": "rm -rf public",
     "lint:js": "eslint --ext .js,.jsx .",
     "lint:md": "remark content/posts/",
-    "lint:css": "stylelint '**/*.css'",
+    "lint:style": "stylelint '**/*.css'",
+    "lint:css": "csslint **/*",
     "write-good": "write-good $(glob 'content/posts/**/*.md')",
-    "format:js": "prettier '**/*.{js,jsx}' --write"
+    "format:js": "prettier '**/*.{js,jsx}' --write",
+    "test": "echo \"Error: no test specified\""
   },
   "remarkConfig": {
     "plugins": [

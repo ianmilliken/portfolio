@@ -1,0 +1,7 @@
+{
+	"errors": [
+		"gradients": true,
+		"shorthand": true,
+		"important": true
+	]
+}
