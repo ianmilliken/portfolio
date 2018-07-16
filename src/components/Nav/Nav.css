@@ -2,7 +2,6 @@
 	position: fixed;
 	z-index: 1;
 	top: 50%;
-	padding-top: 2.8rem;
 	font-size: 1.4rem;
 	transform-origin: top center;
 
@@ -20,6 +19,10 @@
 		display: block;
 		padding: 1.6rem;
 		text-decoration: none;
+		text-transform: uppercase;
+		letter-spacing: 0.12em;
+		font-size: 1.2rem;
+		font-weight: 600;
 	}
 }
 

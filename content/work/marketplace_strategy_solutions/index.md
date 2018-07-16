@@ -35,6 +35,19 @@ stack:
   - Affinity Designer
 ---
 
-## Instant Redesign
+## New marketing site
 
-<customvideo url="https://streamable.com/lu63a"></customvideo>
+A responsive marketing website which is completely customisable from the custom CMS, built from the ground up.
+
+<c-video url="https://streamable.com/ck6zk"></c-video>
+
+## Character illustrations
+
+As a part of the rebrand MSS commissioned some original character illustrations to represent their 4 most common types of client.
+
+<c-grid columns="2">
+<img src="./terry-the-t-rex.png" alt="Terry the T-Rex">
+<img src="./occupied-olivia.png" alt="Occupied Olivia">
+<img src="./queen-beeatrix.png" alt="Queen Beeatrix">
+<img src="./invisibill.png" alt="Invisibill">
+</c-grid>

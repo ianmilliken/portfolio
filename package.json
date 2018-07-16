@@ -41,7 +41,8 @@
     "react-transition-group": "^2.4.0",
     "react-twitter-widgets": "^1.7.1",
     "react-waypoint": "^8.0.2",
-    "rehype-react": "^3.0.2"
+    "rehype-react": "^3.0.2",
+    "webfontloader": "^1.6.28"
   },
   "devDependencies": {
     "cli-glob": "^0.1.0",

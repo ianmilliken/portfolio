@@ -18,6 +18,7 @@ module.exports = {
 	userLocation: "Leeds, UK", // User location to display in the author segment.
 	userAvatar: "", // User avatar to display in the author segment.
 	userEmail: "ianmilliken@live.co.uk",
+	userMobile: "+44 (0) 7597 693 800",
 	userDescription:
 		"", // User description to display in the author segment.
 	// Links to social profiles/projects you want to display in the author segment/navigation bar.
@@ -36,6 +37,12 @@ module.exports = {
 			label: "LinkedIn",
 			url: "https://www.linkedin.com/in/ian-milliken-b733963a/",
 			iconClassName: "fa fa-linkedin"
+		}
+	],
+	userSkills: [
+		{
+			label: "Javascript",
+			icon: "/logos/javascript.png"
 		}
 	],
 	copyright: "© 2018 Ian Milliken", // Copyright string for the footer of the website and RSS feed.

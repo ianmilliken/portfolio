@@ -29,7 +29,7 @@ class About extends Component {
 						</div>
 						<div dangerouslySetInnerHTML={{ __html: post.html }} />
 					</div>
-					<div className="content">
+					<div className="gutter-top">
 						<h2>{post.skill_title}</h2>
 						<p>{post.skill_intro}</p>
 						<ul className="skills">

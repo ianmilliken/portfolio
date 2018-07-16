@@ -1,4 +1,5 @@
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/cc729f1333e3400aa511a67a21ec9e3c)](https://www.codacy.com/app/ianmilliken/portfolio?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=ianmilliken/portfolio&amp;utm_campaign=Badge_Grade)
+[![CodeFactor](https://www.codefactor.io/repository/github/ianmilliken/portfolio/badge)](https://www.codefactor.io/repository/github/ianmilliken/portfolio)
 [![BCH compliance](https://bettercodehub.com/edge/badge/ianmilliken/portfolio?branch=master)](https://bettercodehub.com/)
 [![Build Status](https://travis-ci.org/ianmilliken/portfolio.svg?branch=master)](https://travis-ci.org/ianmilliken/portfolio)
 

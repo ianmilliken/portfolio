@@ -25,7 +25,7 @@ class Index extends React.Component {
 						<div className="status">
 							<div className="status__l">
 								<div className="label anim-title delay-600">Status</div>
-								<div className="anim-title delay-700">Available for hire</div>
+								<div className="anim-title delay-700"><span className="dot pulse"></span>Available for hire</div>
 							</div>
 							<div className="status__r">
 								<div className="label anim-title delay-800">Location</div>

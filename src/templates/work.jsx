@@ -9,6 +9,7 @@ import Arrow from "../components/Icons/Arrow"
 import Video from "../components/Video/Video" 
 import Header from "../components/Editorial/Header/Header" 
 import Grid from "../components/Editorial/Grid/Grid"
+import LogoWall from "../components/Editorial/LogoWall/LogoWall"
 
 import config from "../../data/SiteConfig"
 import "./work.css"
@@ -19,7 +20,8 @@ const RenderAst = new RehypeReact({
 	components: {
 		"c-video": Video,
 		"c-header": Header,
-		"c-grid": Grid
+		"c-grid": Grid,
+		"c-logowall" : LogoWall,
 	} 
 }).Compiler 
 
@@ -73,35 +75,51 @@ export default class PostTemplate extends React.Component {
 					</Helmet>
 					<SEO postPath={slug} postNode={postNode} postSEO />
 					<div className="container header--work header-offset">
-						<El>
-							<h1 className="work__title anim-title">{post.title}</h1>
-						</El>
-						<div className="work__intro">
-							{ post.intro !== null ? post.intro.split("\n").map( (val, i) => {
-								return <p key={val} className={`anim-title delay-${(200 * (i + 1))}`}>{val}</p>
-							}) : "" }
+						<div className="work__header-titles">
+							<El>
+								<h1 className="work__title anim-title">{post.title}</h1>
+							</El>
+							{ post.link ? <div className="work__link anim-title delay-400"><a href={post.link}>{post.link_text} <Arrow classes="work__arrow" /></a></div> : "" }
 						</div>
-						{ post.link ? <div className="work__link anim-title delay-400"><a href={post.link}>{post.link_text} <Arrow classes="work__arrow" /></a></div> : "" }
-					</div>
-					<div className="container work__list gutter-top">
-						<strong className="anim-title delay-600">Scope: </strong>
-						<ul className="scope__list">
-							{ post.scope !== null ? post.scope.map( val => (
-								<li key={val} className="scope__item anim-title delay-600">{val}</li>
-							)) : "" }
-						</ul>
-					</div>
-					<div className="container work__list">
-						<strong className="anim-title delay-800">Stack: </strong>
-						<ul className="scope__list">
-							{ post.stack !== null ? post.stack.map( val => (
-								<li key={val} className="scope__item anim-title delay-800">{val}</li>
-							)) : "" }
-						</ul>
+						<div>
+							<div className="work__list">
+								<strong className="anim-title delay-600">
+									<span className="list__title">Year</span>
+								</strong>
+								<div className="scope__list">{post.date}</div>
+							</div>
+							<div className="work__list gutter-top--medium">
+								<strong className="anim-title delay-600">
+									<span className="list__title">Scope</span>
+								</strong>
+								<ul className="scope__list">
+									{ post.scope !== null ? post.scope.map( val => (
+										<li key={val} className="scope__item anim-title delay-600">{val}</li>
+									)) : "" }
+								</ul>
+							</div>
+							<div className="work__list gutter-top--medium">
+								<strong className="anim-title delay-800">
+									<span className="list__title">Stack</span>
+								</strong>
+								<ul className="scope__list">
+									{ post.stack !== null ? post.stack.map( val => (
+										<li key={val} className="scope__item anim-title delay-800">{val}</li>
+									)) : "" }
+								</ul>
+							</div>
+						</div>
 					</div>
 					<div className="gutter-top">
+						<div className="container container--wide">
+							<div className="work__intro">
+								<div className="container">
+									<p>{post.intro}</p>
+								</div>
+							</div>
+						</div>
 						{/* <div dangerouslySetInnerHTML={{ __html: postNode.html }} /> */}
-						<div>{RenderAst(postNode.htmlAst)}</div>
+						<div className="work-content">{RenderAst(postNode.htmlAst)}</div>
 					</div>
 				</div>
 			</Transition>
@@ -118,7 +136,7 @@ export const pageQuery = graphql`
 			htmlAst
 			frontmatter {
 				title
-				date
+				date(formatString: "YYYY")
 				intro
 				link
 				link_text
