@@ -1,0 +1,13 @@
+.work-content .textblock p {
+	margin-top: 0;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.textblock {
+    padding: 8.8rem 17.2rem;
+	font-family: 'Coranto 2', serif;
+	font-size: 2.1rem;
+	text-align: center;
+	background-color: #ffffff;
+}

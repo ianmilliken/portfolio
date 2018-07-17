@@ -31,3 +31,5 @@ stack:
 ### Dynamic location indicators
 
 Bilgo’s content team were producing 10,000 word articles, so I created adaptive page navigation compnents that provided scoped context to help users find their way around these monoliths.
+
+<c-video url="https://streamable.com/msfzw"></c-video>

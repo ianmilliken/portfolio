@@ -202,6 +202,11 @@ main {
 	}
 }
 
+.padder--vertical {
+	padding-top: 6.8rem;
+	padding-bottom: 6.8rem;
+}
+
 .status {
 	position: absolute;
 	bottom: 0;

@@ -36,13 +36,23 @@ stack:
 
 Two New Natives hosts its images on community photography platforms like 500px and Flickr for social engagement. Their website synchronizes with these platfroms via API’s, so that when they create a new gallery on either one, it is automatically created on their site.
 
-<c-video url="https://streamable.com/ck6zk"></c-video>
+<c-video url="https://streamable.com/1fd1b"></c-video>
 
 ## Distraction free content
 
 ### Making the site easy to navigate, with easy to digest content
 
 Paying special attention to providing clean, uncluttered layouts, organised and clear typography, and careful usage of colour pallete to frame the websites content were all top priorities.
+
+<c-video url="https://streamable.com/yrjdr"></c-video>
+
+## Live previews
+
+### Using NetlifyCMS to manage content
+
+Manage the content with that CMS there
+
+<c-video url="https://streamable.com/gyvch"></c-video>
 
 ## Handwritten logo
 

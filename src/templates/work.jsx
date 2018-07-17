@@ -10,6 +10,7 @@ import Video from "../components/Video/Video"
 import Header from "../components/Editorial/Header/Header" 
 import Grid from "../components/Editorial/Grid/Grid"
 import LogoWall from "../components/Editorial/LogoWall/LogoWall"
+import TextBlock from "../components/Editorial/TextBlock/TextBlock"
 
 import config from "../../data/SiteConfig"
 import "./work.css"
@@ -22,6 +23,7 @@ const RenderAst = new RehypeReact({
 		"c-header": Header,
 		"c-grid": Grid,
 		"c-logowall" : LogoWall,
+		"c-text" : TextBlock,
 	} 
 }).Compiler 
 
@@ -120,6 +122,10 @@ export default class PostTemplate extends React.Component {
 						</div>
 						{/* <div dangerouslySetInnerHTML={{ __html: postNode.html }} /> */}
 						<div className="work-content">{RenderAst(postNode.htmlAst)}</div>
+					</div>
+					<div className="container gutter-top center">
+						<h4>Ready to get in touch?</h4>
+						<a href="/">Contact me</a>
 					</div>
 				</div>
 			</Transition>

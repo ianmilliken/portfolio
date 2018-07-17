@@ -35,6 +35,57 @@ stack:
   - Photoshop
 ---
 
-## Instant Redesign
+## Drag & drop student management
 
-With users already in the system and struggling, my first point of action was creating a holistic facelift.
+### Providing an intuitive way for users to manage their students
+
+I created a drag and drop system to allow business users an easy, intuitive way to assign both their employees and courseware to courses. This allows users a very fast way to create, modify, and keep track of courses.
+
+<c-video url="https://streamable.com/u6dns"></c-video>
+
+## Smart suggestive search 
+
+### Helping users to refine large lists of data with minimal effort
+
+Paying special attention to providing clean, uncluttered layouts, organised and clear typography, and careful usage of colour pallete to frame the websites content were all top priorities. 
+
+<c-video url="https://streamable.com/7pc52"></c-video>
+
+## Customer activity reporting
+
+### Displaying important metrics with visual clarity
+
+Training company users needed a variety of reports to measure the performance of their courseware. We produced interactive graphs and charts that allowed them easy access to their important metrics.
+
+<c-video url="https://streamable.com/0y4gi"></c-video>
+
+## Practical event booking
+
+### An interactive calendar for visualizing and managing large data sets
+
+The calendar allows administrators to see past, present, and upcoming bookings in colour coded bitsize peices. Updating or accessing additional booking information is revealed by clicking on them, and the view can be refined to month, week, or day timelines.
+
+<c-video url="https://streamable.com/5fd44"></c-video>
+
+## Marketing illustrations
+
+### Giving visual cues to users on how to interact with Chorck’s more complex features
+
+Paying special attention to providing clean, uncluttered layouts, organised and clear typography, and careful usage of colour pallete to frame the websites content were all top priorities.
+
+<c-grid columns="5" fill="background">
+<img src="./illustration_01.png" alt="Alt">
+<img src="./illustration_02.png" alt="Alt">
+<img src="./illustration_03.png" alt="Alt">
+<img src="./illustration_04.png" alt="Alt">
+<img src="./illustration_05.png" alt="Alt">
+<img src="./illustration_06.png" alt="Alt">
+<img src="./illustration_07.png" alt="Alt">
+<img src="./illustration_08.png" alt="Alt">
+<img src="./illustration_09.png" alt="Alt">
+<img src="./illustration_20.png" alt="Alt">
+</c-grid>
+
+<c-text>
+  My work at Chorck has helped to onboard thousands of new users and increase it’s rate of user growth. I continue to work with Chorck on new features and marking materials.
+</c-text>

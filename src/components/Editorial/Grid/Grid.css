@@ -1,6 +1,8 @@
 .grid {
 	display: grid;
 	grid-gap: 4rem;
+	align-items: center;
+	justify-items: center;
 }
 
 .work .grid {
@@ -33,6 +35,10 @@
 	grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
+.grid--5 {
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
 .grid .gatsby-resp-image-link {
 	display: flex;
 	align-items: center;
@@ -40,5 +46,12 @@
 	width: 100%;
 	height: 100%;
 	padding: 4rem;
+}
+
+.fill--background {
+	background-color: #ffffff;
+}
+
+.fill--image .gatsby-resp-image-link {
 	background-color: #ffffff;
 }
