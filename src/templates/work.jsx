@@ -81,7 +81,7 @@ export default class PostTemplate extends React.Component {
 							<El>
 								<h1 className="work__title anim-title">{post.title}</h1>
 							</El>
-							{ post.link ? <div className="work__link anim-title delay-400"><a href={post.link}>{post.link_text} <Arrow classes="work__arrow" /></a></div> : "" }
+							{ post.link ? <div className="work__link anim-title delay-400"><a href={post.link} target="_blank">{post.link_text} <Arrow classes="work__arrow" /></a></div> : "" }
 						</div>
 						<div>
 							<div className="work__list">

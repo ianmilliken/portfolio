@@ -41,15 +41,23 @@ stack:
 
 Marketplace's new website has been built from the ground up using modern technologies to ensure both a good developer and user experience. It's integrated with their CRM to make new customer acquisition a doddle.
 
-<c-video url="https://streamable.com/ck6zk"></c-video>
+<c-video url="https://streamable.com/p478y"></c-video>
 
-## Easy-peasy publishing
+## Easy peasy publishing
 
 ### A simple and extendable content-focused CMS
 
 The CMS is optimised for content creation with a draft and review system, live editor previews, and custom editor widgets. It allows for the creation of many different content types including landing pages and case studies.
 
-<c-video url="https://streamable.com/ck6zk"></c-video>
+<c-video url="https://streamable.com/0ybtc"></c-video>
+
+## Fine tuned customer journeys
+
+### Helping to capture new business with well structured content
+
+Every page has a carefully crafted user journey to keep users engaged. CTA's, positive stats, and other alluring information stand out in the UI and have planned placement to capture each users attention at the right moment.
+
+<c-video url="https://streamable.com/rzeem"></c-video>
 
 ## Character illustrations
 

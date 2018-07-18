@@ -28,8 +28,16 @@ stack:
 
 ## Adaptive navigation
 
-### Dynamic location indicators
+### Keeping users grounded with contextual, ever-present navigation
 
-Bilgo’s content team were producing 10,000 word articles, so I created adaptive page navigation compnents that provided scoped context to help users find their way around these monoliths.
+With some articles reaching up to 10,000 words, Bilgo needed a unique in-page navigation solution to help users find their way around, and reduce bounce rate. The navigation tracks the users progress throughout the monolith, and organizes itself into contextual menus.
 
 <c-video url="https://streamable.com/msfzw"></c-video>
+
+## Stacked layout
+
+### Eradicating uncomplimentary negative space for a better content flow
+
+A pinterest-inspired layout for article listings that improves the look and flow of the content by tackling uncomplimentary negative space with support down to IE6.
+
+<c-video url="https://streamable.com/j4z7c"></c-video>

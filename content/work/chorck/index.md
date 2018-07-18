@@ -47,7 +47,7 @@ I created a drag and drop system to allow business users an easy, intuitive way 
 
 ### Helping users to refine large lists of data with minimal effort
 
-Paying special attention to providing clean, uncluttered layouts, organised and clear typography, and careful usage of colour pallete to frame the websites content were all top priorities. 
+Users managing lists of hundreds or thousands of students or courses need a fast way to refine that data. The smart search tool takes a users query and makes weighted suggestions based on the parameters and value they provide.
 
 <c-video url="https://streamable.com/7pc52"></c-video>
 
@@ -55,7 +55,7 @@ Paying special attention to providing clean, uncluttered layouts, organised and 
 
 ### Displaying important metrics with visual clarity
 
-Training company users needed a variety of reports to measure the performance of their courseware. We produced interactive graphs and charts that allowed them easy access to their important metrics.
+Training company users need a variety of reports to measure the performance of their courseware, and interactions with customers. The activity dashboard automatically generates interactive graphs and charts that allow users to easily digest this information.
 
 <c-video url="https://streamable.com/0y4gi"></c-video>
 
@@ -67,6 +67,14 @@ The calendar allows administrators to see past, present, and upcoming bookings i
 
 <c-video url="https://streamable.com/5fd44"></c-video>
 
+## Microinteractions
+
+### Keeping the UX fun and fresh
+
+Microinteractions are featured throughout Chorck and are built into the design system. They provide positive feedback when the user interacts with the UI, and provide a good baseline for a responsive UX.
+
+<c-video url="https://streamable.com/o9cw6"></c-video>
+
 ## Marketing illustrations
 
 ### Giving visual cues to users on how to interact with Chorck’s more complex features
@@ -74,7 +82,7 @@ The calendar allows administrators to see past, present, and upcoming bookings i
 Paying special attention to providing clean, uncluttered layouts, organised and clear typography, and careful usage of colour pallete to frame the websites content were all top priorities.
 
 <c-grid columns="5" fill="background">
-<img src="./illustration_01.png" alt="Alt">
+<img src="./invisibill.png" alt="Invisibill">
 <img src="./illustration_02.png" alt="Alt">
 <img src="./illustration_03.png" alt="Alt">
 <img src="./illustration_04.png" alt="Alt">
