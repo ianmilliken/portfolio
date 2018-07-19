@@ -16,21 +16,33 @@ stack:
   - Illustrator
 ---
 
-## Lettermark logo
+<c-revealer container="true" curtain="true" margin="true">
+  <h2>Lettermark logo</h2>
+</c-revealer>
 
-### Conveying hidden meaning throughout it's form
+<c-revealer container="true" curtain="true">
+  <h3>Conveying hidden meaning throughout it's form</h3>
+</c-revealer>
 
-The lettermark’s form is made up of small symbols which are references to the types of activities Restless alert their customers to.
+<c-revealer container="true" curtain="true">
+  <p>The lettermark’s form is made up of small symbols which are references to the types of activities Restless alert their customers to.</p>
+</c-revealer>
 
 <c-grid columns="1-2" fill="background">
 	<img src="/images/logo.svg" alt="Restless logo lettermark">
 </c-grid>
 
-## Iconography
+<c-revealer container="true" curtain="true">
+  <h2>Iconography</h2>
+</c-revealer>
 
-### Clean 'linecons'
+<c-revealer container="true" curtain="true">
+  <h3>Clean 'linecons'</h3>
+</c-revealer>
 
-An initial collection of vector line icons for use in marketing materials and as supporting imagery for Restless’ initial content plan.
+<c-revealer container="true" curtain="true">
+  <p>An initial collection of vector line icons for use in marketing materials and as supporting imagery for Restless’ initial content plan.</p>
+</c-revealer>
 
 <c-grid columns="2" fill="background">
   <c-grid columns="4" fill="background">
@@ -71,11 +83,17 @@ An initial collection of vector line icons for use in marketing materials and as
   </c-grid>
 </c-grid>
 
-## Typography
+<c-revealer container="true" curtain="true">
+  <h2>Typography</h2>
+</c-revealer>
 
-### Complimenting the logo and linecons
+<c-revealer container="true" curtain="true">
+  <h3>Complimenting the logo and linecons</h3>
+</c-revealer>
 
-Restless picked Nanami Rounded, a clean & contemporary geometric sans-serif, as their brand font from a list of suggestions. Nanami compliments the branding well thanks to it's soft edges. It's also highly legible making it a good choice for marketing and editorial purposes.
+<c-revealer container="true" curtain="true">
+  <p>Restless picked Nanami Rounded, a clean & contemporary geometric sans-serif, as their brand font from a list of suggestions. Nanami compliments the branding well thanks to it's soft edges. It's also highly legible making it a good choice for marketing and editorial purposes.</p>
+</c-revealer>
 
 <c-grid columns="1-2" fill="background">
 	<img src="/images/logo-with-text.svg" alt="Restless logo with text">

@@ -2,6 +2,7 @@ import React from "react"
 import Link from "gatsby-link"
 import "./PostListing.css"
 import Arrow from "../Icons/Arrow"
+import Revealer from "../Revealer/Revealer"
 
 
 class PostListing extends React.Component {
@@ -32,11 +33,13 @@ class PostListing extends React.Component {
 					{// Your post list here.
 					postList.map(post => (
 						<li key={post.title} className="item">
-							<Link to={post.path} className="item__link">
-								<h2 className="item__title">{post.title}</h2>
-								<div className="item__date">{post.date}</div>
-								<Arrow classes="item__arrow" />
-							</Link>
+							<Revealer>
+								<Link to={post.path} className="item__link">
+									<h2 className="item__title">{post.title}</h2>
+									<div className="item__date">{post.date}</div>
+									<Arrow classes="item__arrow" />
+								</Link>
+							</Revealer>
 						</li>
 					))}
 				</ul>

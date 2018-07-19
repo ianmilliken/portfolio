@@ -39,6 +39,8 @@
 	display: grid;
 	grid-template-columns: 2.5fr 1.5fr;
 	grid-gap: 4rem;
+	height: 80vh;
+	min-height: 45.6rem;
 }
 
 .work__header-titles {

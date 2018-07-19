@@ -34,8 +34,8 @@ class Revealer extends React.Component {
 
 				<div className="reveal-wrapper">
 					<div className={`reveal${this.state.inView ? " is-active" : ""}${this.props.container ? " container" : ""}${this.props.curtain ? " has-curtain" : ""}`} style={{ marginTop: marginTop }}>
-						{this.props.children}
 						<div className={`reveal-blind${this.state.inView ? " is-active" : ""}`}></div>
+						{this.props.children}
 					</div>
 				</div>
 			</Waypoint>
