@@ -82,16 +82,16 @@ Microinteractions are featured throughout Chorck and are built into the design s
 Paying special attention to providing clean, uncluttered layouts, organised and clear typography, and careful usage of colour pallete to frame the websites content were all top priorities.
 
 <c-grid columns="5" fill="background">
-<img src="./invisibill.png" alt="Invisibill">
-<img src="./illustration_02.png" alt="Alt">
-<img src="./illustration_03.png" alt="Alt">
-<img src="./illustration_04.png" alt="Alt">
-<img src="./illustration_05.png" alt="Alt">
-<img src="./illustration_06.png" alt="Alt">
-<img src="./illustration_07.png" alt="Alt">
-<img src="./illustration_08.png" alt="Alt">
-<img src="./illustration_09.png" alt="Alt">
-<img src="./illustration_20.png" alt="Alt">
+<img src="/images/image_01.svg" alt="Invisibill">
+<img src="/images/illustration_02.png" alt="Alt">
+<img src="/images/illustration_03.png" alt="Alt">
+<img src="/images/illustration_04.png" alt="Alt">
+<img src="/images/illustration_05.png" alt="Alt">
+<img src="/images/illustration_06.png" alt="Alt">
+<img src="/images/illustration_07.png" alt="Alt">
+<img src="/images/illustration_08.png" alt="Alt">
+<img src="/images/illustration_09.png" alt="Alt">
+<img src="/images/illustration_20.png" alt="Alt">
 </c-grid>
 
 <c-text>

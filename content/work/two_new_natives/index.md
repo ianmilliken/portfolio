@@ -61,7 +61,7 @@ Manage the content with that CMS there
 Some content!
 
 <c-grid columns="1-2" colorOne="#fc4f4f" colorTwo="#16161d">
-<img src="./logo.png" alt="Two New Natives Main Logo">
-<img src="./logo-white.png" alt="Two New Natives Main Logo">
-<img src="./logo-white.png" alt="Two New Natives Main Logo">
+<img src="/images/logo.png" alt="Two New Natives Main Logo">
+<img src="/images/logo-white.png" alt="Two New Natives Main Logo">
+<img src="/images/logo-white.png" alt="Two New Natives Main Logo">
 </c-grid>

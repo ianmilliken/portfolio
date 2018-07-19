@@ -34,7 +34,10 @@ export const aboutPageQuery = graphql`
 						title
 						skill_title
 						skill_intro
-						skills
+						skills {
+							name
+							image
+						}
 					}
 					html
 				}

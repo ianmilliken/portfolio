@@ -3,6 +3,11 @@
 	grid-gap: 4rem;
 	align-items: center;
 	justify-items: center;
+
+	& > .grid {
+		margin-top: 0;
+		margin-bottom: 0;
+	}
 }
 
 .work .grid {

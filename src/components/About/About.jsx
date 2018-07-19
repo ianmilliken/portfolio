@@ -35,7 +35,8 @@ class About extends Component {
 						<ul className="skills">
 							{ post.skills.map(skill => (
 								<li key={skill} className="skills__item">
-									<h4 className="skills__title">{skill}</h4>
+									<img src={skill.image} alt={skill.name} />
+									<h4 className="skills__title">{skill.name}</h4>
 								</li>
 							))}
 						</ul>

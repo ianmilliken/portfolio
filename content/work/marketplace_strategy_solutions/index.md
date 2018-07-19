@@ -64,10 +64,10 @@ Every page has a carefully crafted user journey to keep users engaged. CTA's, po
 As a part of the rebrand MSS commissioned some original character illustrations to represent their 4 most common types of client.
 
 <c-grid columns="2" fill="image">
-<img src="./terry-the-t-rex.png" alt="Terry the T-Rex">
-<img src="./occupied-olivia.png" alt="Occupied Olivia">
-<img src="./queen-beeatrix.png" alt="Queen Beeatrix">
-<img src="./invisibill.png" alt="Invisibill">
+<img src="/images/terry-the-t-rex.png" alt="Terry the T-Rex">
+<img src="/images/occupied-olivia.png" alt="Occupied Olivia">
+<img src="/images/queen-beeatrix.png" alt="Queen Beeatrix">
+<img src="/images/invisibill.png" alt="Invisibill">
 </c-grid>
 
 ## Iconography
@@ -77,14 +77,14 @@ As a part of the rebrand MSS commissioned some original character illustrations 
 A starter pack of simple linecons for Marketplace's most important B2B services, designed to compliment content and provide a quick a visual reference to their services.
 
 <c-grid columns="4" fill="background" narrow="true">
-<img src="./icon_01.svg" alt="Icon 01">
-<img src="./icon_02.svg" alt="Icon 02">
-<img src="./icon_03.svg" alt="Icon 03">
-<img src="./icon_04.svg" alt="Icon 04">
-<img src="./icon_05.svg" alt="Icon 05">
-<img src="./icon_06.svg" alt="Icon 06">
-<img src="./icon_07.svg" alt="Icon 07">
-<img src="./icon_08.svg" alt="Icon 08">
+<img src="/images/icon_01.svg" alt="Icon 01">
+<img src="/images/icon_02.svg" alt="Icon 02">
+<img src="/images/icon_03.svg" alt="Icon 03">
+<img src="/images/icon_04.svg" alt="Icon 04">
+<img src="/images/icon_05.svg" alt="Icon 05">
+<img src="/images/icon_06.svg" alt="Icon 06">
+<img src="/images/icon_07.svg" alt="Icon 07">
+<img src="/images/icon_08.svg" alt="Icon 08">
 </c-grid>
 
 ## Lettermark logo
@@ -94,7 +94,7 @@ A starter pack of simple linecons for Marketplace's most important B2B services,
 A contemporary lettermark with sharp edges that conceptually imbues Marketplace's values and services into the shape. MSS were formally known as Marketplace Communications, the lettermark was chosen over other concepts because it made the rebrand transition smoother.
 
 <c-grid columns="1-2" fill="background">
-<img src="./logo.svg" alt="Marketplace Strategy Solutions lettermark">
-<img src="./logo_alt_01.svg" alt="Marketplace Strategy Solutions full logo">
-<img src="./logo_alt_02.svg" alt="Marketplace Strategy Solutions full logo">
+<img src="/images/logo.svg" alt="Marketplace Strategy Solutions lettermark">
+<img src="/images/logo_alt_01.svg" alt="Marketplace Strategy Solutions full logo">
+<img src="/images/logo_alt_02.svg" alt="Marketplace Strategy Solutions full logo">
 </c-grid>
