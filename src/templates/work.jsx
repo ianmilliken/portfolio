@@ -6,6 +6,7 @@ import SEO from "../components/SEO/SEO"
 
 import Transition from "../components/Transition/Transition"
 import Arrow from "../components/Icons/Arrow"
+import Phaser from "../components/Phaser/Phaser"
 import Video from "../components/Video/Video" 
 import Header from "../components/Editorial/Header/Header" 
 import Grid from "../components/Editorial/Grid/Grid"
@@ -85,28 +86,22 @@ export default class PostTemplate extends React.Component {
 						</div>
 						<div>
 							<div className="work__list">
-								<strong className="anim-title delay-600">
-									<span className="list__title">Year</span>
-								</strong>
-								<div className="scope__list">{post.date}</div>
+								<Phaser tag="strong" value="Year" delay="400" childClass="list__title" />
+								<Phaser value={post.date} delay="400" childClass="scope__list" />
 							</div>
 							<div className="work__list gutter-top--medium">
-								<strong className="anim-title delay-600">
-									<span className="list__title">Scope</span>
-								</strong>
+								<Phaser tag="strong" value="Scope" delay="600" childClass="list__title" />
 								<ul className="scope__list">
 									{ post.scope !== null ? post.scope.map( val => (
-										<li key={val} className="scope__item anim-title delay-600">{val}</li>
+										<Phaser key={val} tag="li" value={val} delay="600" childClass="scope__item" />
 									)) : "" }
 								</ul>
 							</div>
 							<div className="work__list gutter-top--medium">
-								<strong className="anim-title delay-800">
-									<span className="list__title">Stack</span>
-								</strong>
+								<Phaser tag="strong" value="Stack" delay="800" childClass="list__title" />
 								<ul className="scope__list">
 									{ post.stack !== null ? post.stack.map( val => (
-										<li key={val} className="scope__item anim-title delay-800">{val}</li>
+										<Phaser key={val} tag="li" value={val} delay="800" childClass="scope__item" />
 									)) : "" }
 								</ul>
 							</div>
