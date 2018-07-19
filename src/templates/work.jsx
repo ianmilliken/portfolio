@@ -1,12 +1,12 @@
 import React from "react"
 import Helmet from "react-helmet"
-import Waypoint from "react-waypoint"
 import RehypeReact from "rehype-react" 
 import SEO from "../components/SEO/SEO"
 
 import Transition from "../components/Transition/Transition"
 import Arrow from "../components/Icons/Arrow"
 import Phaser from "../components/Phaser/Phaser"
+import Revealer from "../components/Revealer/Revealer"
 import Video from "../components/Video/Video" 
 import Header from "../components/Editorial/Header/Header" 
 import Grid from "../components/Editorial/Grid/Grid"
@@ -25,37 +25,9 @@ const RenderAst = new RehypeReact({
 		"c-grid": Grid,
 		"c-logowall" : LogoWall,
 		"c-text" : TextBlock,
+		"c-revealer": Revealer,
 	} 
-}).Compiler 
-
-
-class El extends React.Component {
-
-	constructor(props) {
-		super(props)
-		this.state = {
-			inView: false
-		}
-		this.handleEnter = this.handleEnter.bind(this)
-		this.handleLeave = this.handleLeave.bind(this)
-	}
-
-	handleEnter() {
-		this.setState({ inView: true })
-	}
-
-	handleLeave() {
-		this.setState({ inView: false })
-	}
-
-	render() {
-		return (
-			<Waypoint onEnter={this.handleEnter} onLeave={this.handleLeave}>
-				<div className={this.state.inView ? "is-active" : ""}>{this.props.children}</div>
-			</Waypoint>
-		)
-	}
-}
+}).Compiler
 
 
 export default class PostTemplate extends React.Component {
@@ -79,9 +51,9 @@ export default class PostTemplate extends React.Component {
 					<SEO postPath={slug} postNode={postNode} postSEO />
 					<div className="container header--work header-offset">
 						<div className="work__header-titles">
-							<El>
+							<Revealer>
 								<h1 className="work__title anim-title">{post.title}</h1>
-							</El>
+							</Revealer>
 							{ post.link ? <div className="work__link anim-title delay-400"><a href={post.link} target="_blank">{post.link_text} <Arrow classes="work__arrow" /></a></div> : "" }
 						</div>
 						<div>
@@ -109,11 +81,13 @@ export default class PostTemplate extends React.Component {
 					</div>
 					<div className="gutter-top">
 						<div className="container container--wide">
-							<div className="work__intro">
-								<div className="container">
-									<p>{post.intro}</p>
+							<Revealer>
+								<div className="work__intro">
+									<div className="container">
+										<p>{post.intro}</p>
+									</div>
 								</div>
-							</div>
+							</Revealer>
 						</div>
 						{/* <div dangerouslySetInnerHTML={{ __html: postNode.html }} /> */}
 						<div className="work-content">{RenderAst(postNode.htmlAst)}</div>

@@ -1,0 +1,66 @@
+
+
+.reveal-wrapper {
+	overflow: hidden;
+}
+
+.reveal {
+	position: relative;
+	&.is-active {
+		animation-name: reveal;
+		animation-duration: 1s;
+		animation-timing-function: cubic-beziercubic-bezier(0.165, 0.84, 0.44, 1);
+	}
+}
+
+.container > .reveal-blind {
+	width: calc(100% - (10.8rem * 2));
+	left: 10.8rem;
+	right: 10.8rem;
+}
+
+.has-curtain .reveal-blind {
+	&.is-active {
+		animation-name: blind;
+		animation-duration: 1s;
+		animation-timing-function: cubic-bezier(0.785, 0.135, 0.150, 0.860);
+	}
+}
+
+.reveal-blind {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+}
+
+@keyframes reveal {
+	0% {
+		transform: translateY(100%);
+		opacity: 0;
+	}
+
+	100% {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+
+@keyframes blind {
+	0% {
+		z-index: 1;
+		height: 0;
+		background-color: #00dea1;
+		transform: translateY(-100%);
+	}
+
+	50% {
+		height: 100%;
+	}
+
+	100% {
+		background-color: #00dea1;
+		transform: translateY(100%);
+	}
+}
