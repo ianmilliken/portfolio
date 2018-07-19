@@ -10,6 +10,8 @@ import Triangle from "../components/Icons/Triangle"
 import Circle from "../components/Icons/Circle"
 import UserLinks from "../components/UserLinks/UserLinks"
 
+import Transition from "../components/Transition/Transition"
+
 import config from "../../data/SiteConfig"
 import "./index.css"
 import "./font-awesome.css"
@@ -82,16 +84,6 @@ export default class MainLayout extends React.Component {
 		return title
 	}
 
-	getLocalMenu() {
-		const pathPrefix = config.pathPrefix ? config.pathPrefix : "/"
-		const currentPath = this.props.location.pathname.replace(pathPrefix, "").replace("/", "")
-		let menu = 0;
-		if (currentPath === "work/") {
-			menu = 1
-		}
-		return menu
-	}
-
 	handleContactLink(e) {
 		e.preventDefault()
 		const { contact} = this.state
@@ -127,8 +119,8 @@ export default class MainLayout extends React.Component {
 				</Helmet>
 				<Circle classes="shape shape--left" color="#00DEA1" />
 				<Triangle classes="shape shape--right" color="#00DEA1" />
-				<Header config={config} />
-				<Nav menu={this.getLocalMenu()} onContactLink={this.handleContactLink} />
+				<Transition><Header config={config} /></Transition>
+				<Nav menu={this.props.data.allMarkdownRemark.edges} onContactLink={this.handleContactLink} currentPath={pathname} />
 				<main>{children()}</main>
 				<Footer config={config} />
 				<div className={`overlay ${ this.state.contact ? `is-active` : ``}`} />
@@ -157,3 +149,20 @@ export default class MainLayout extends React.Component {
 		)
 	}
 }
+
+
+export const navQuery = graphql`
+	query navQuery {
+		allMarkdownRemark(
+			filter: { fields: { name: { eq: "work" } } }
+		) {
+			edges {
+				node {
+					fields {
+						slug
+					}
+				}
+			}
+		}
+	}
+`
