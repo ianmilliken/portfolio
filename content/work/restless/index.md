@@ -28,7 +28,7 @@ stack:
   <p>The lettermark’s form is made up of small symbols which are references to the types of activities Restless alert their customers to.</p>
 </c-revealer>
 
-<c-grid columns="1-2" fill="background">
+<c-grid columns="1" fill="background">
 	<img src="/images/logo.svg" alt="Restless logo lettermark">
 </c-grid>
 
@@ -44,43 +44,23 @@ stack:
   <p>An initial collection of vector line icons for use in marketing materials and as supporting imagery for Restless’ initial content plan.</p>
 </c-revealer>
 
-<c-grid columns="2" fill="background">
-  <c-grid columns="4" fill="background">
-    <img src="/images/camera.svg" alt="Camera Icon">
-    <img src="/images/beer.svg" alt="Beer Icon">
-    <img src="/images/icecream.svg" alt="Ice Cream Icon">
-    <img src="/images/rugby.svg" alt="Rugby Icon">
-    <img src="/images/cocktail.svg" alt="Cocktail Icon">
-    <img src="/images/cutlery.svg" alt="Cutlery Icon">
-    <img src="/images/bunting.svg" alt="Bunting Icon">
-    <img src="/images/dinner.svg" alt="Dinner Icon">
-    <img src="/images/shoe.svg" alt="Shoe Icon">
-    <img src="/images/trumpet.svg" alt="Trumpet Icon">
-    <img src="/images/football.svg" alt="Football Icon">
-    <img src="/images/karaoke.svg" alt="Karaoke Icon">
-    <img src="/images/wine.svg" alt="Wine Icon">
-    <img src="/images/shopping.svg" alt="Shopping Icon">
-    <img src="/images/cycling.svg" alt="Cycling Icon">
-    <img src="/images/camping.svg" alt="Camping Icon">
-  </c-grid>
-  <c-grid columns="4" fill="background" background="#6d6df6">
-    <img src="/images/camera-reverse.svg" alt="Camera Icon">
-    <img src="/images/beer-reverse.svg" alt="Beer Icon">
-    <img src="/images/icecream-reverse.svg" alt="Ice Cream Icon">
-    <img src="/images/rugby-reverse.svg" alt="Rugby Icon">
-    <img src="/images/cocktail-reverse.svg" alt="Cocktail Icon">
-    <img src="/images/cutlery-reverse.svg" alt="Cutlery Icon">
-    <img src="/images/bunting-reverse.svg" alt="Bunting Icon">
-    <img src="/images/dinner-reverse.svg" alt="Dinner Icon">
-    <img src="/images/shoe-reverse.svg" alt="Shoe Icon">
-    <img src="/images/trumpet-reverse.svg" alt="Trumpet Icon">
-    <img src="/images/football-reverse.svg" alt="Football Icon">
-    <img src="/images/karaoke-reverse.svg" alt="Karaoke Icon">
-    <img src="/images/wine-reverse.svg" alt="Wine Icon">
-    <img src="/images/shopping-reverse.svg" alt="Shopping Icon">
-    <img src="/images/cycling-reverse.svg" alt="Cycling Icon">
-    <img src="/images/camping-reverse.svg" alt="Camping Icon">
-  </c-grid>
+<c-grid columns="6" fill="background">
+  <img src="/images/camera.svg" alt="Camera Icon">
+  <img src="/images/beer.svg" alt="Beer Icon">
+  <img src="/images/icecream.svg" alt="Ice Cream Icon">
+  <img src="/images/rugby.svg" alt="Rugby Icon">
+  <img src="/images/cocktail.svg" alt="Cocktail Icon">
+  <img src="/images/cutlery.svg" alt="Cutlery Icon">
+  <img src="/images/bunting.svg" alt="Bunting Icon">
+  <img src="/images/dinner.svg" alt="Dinner Icon">
+  <img src="/images/shoe.svg" alt="Shoe Icon">
+  <img src="/images/trumpet.svg" alt="Trumpet Icon">
+  <img src="/images/football.svg" alt="Football Icon">
+  <img src="/images/karaoke.svg" alt="Karaoke Icon">
+  <img src="/images/wine.svg" alt="Wine Icon">
+  <img src="/images/shopping.svg" alt="Shopping Icon">
+  <img src="/images/cycling.svg" alt="Cycling Icon">
+  <img src="/images/camping.svg" alt="Camping Icon">
 </c-grid>
 
 <c-revealer container="true" curtain="true">

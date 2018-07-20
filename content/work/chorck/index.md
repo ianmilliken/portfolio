@@ -60,7 +60,7 @@ stack:
 </c-revealer>
 
 <c-revealer container="true" curtain="true">
-  <p>Users managing lists of hundreds or thousands of students or courses need a fast way to refine that data. The smart search tool takes a users query and makes weighted suggestions based on the parameters and value they provide.</p>
+  <p>Users managing lists of hundreds or thousands of students or courses need a fast way to refine that data. The smart search tool takes a users query and makes weighted suggestions based on the parameters they select and value they provide.</p>
 </c-revealer>
 
 <c-revealer>
@@ -92,7 +92,7 @@ stack:
 </c-revealer>
 
 <c-revealer container="true" curtain="true">
-  <p>The calendar allows administrators to see past, present, and upcoming bookings in colour coded bitsize peices. Updating or accessing additional booking information is revealed by clicking on them, and the view can be refined to month, week, or day timelines.</p>
+  <p>The calendar allows administrators to see past, present, and upcoming bookings in colour coded bite-size peices. Updating or accessing additional booking information is revealed by clicking on them, and the view can be refined to month, week, or day timelines.</p>
 </c-revealer>
 
 <c-revealer>
@@ -120,28 +120,28 @@ stack:
 </c-revealer>
 
 <c-revealer container="true" curtain="true">
-  <h3>Giving visual cues to users on how to interact with Chorck’s more complex features</h3>
+  <h3>Helping new cutsomers to understand the system visually</h3>
 </c-revealer>
 
 <c-revealer container="true" curtain="true">
-  <p>Paying special attention to providing clean, uncluttered layouts, organised and clear typography, and careful usage of colour pallete to frame the websites content were all top priorities.</p>
+  <p>A series of illustrations that are used to visually translate brand tone, and act as visual aids for helping new users to understand and interact with the system.</p>
 </c-revealer>
 
-<c-grid columns="5" fill="background">
-<img src="/images/image_01.svg" alt="Invisibill">
-<img src="/images/illustration_02.png" alt="Alt">
-<img src="/images/illustration_03.png" alt="Alt">
-<img src="/images/illustration_04.png" alt="Alt">
-<img src="/images/illustration_05.png" alt="Alt">
-<img src="/images/illustration_06.png" alt="Alt">
-<img src="/images/illustration_07.png" alt="Alt">
-<img src="/images/illustration_08.png" alt="Alt">
-<img src="/images/illustration_09.png" alt="Alt">
-<img src="/images/illustration_20.png" alt="Alt">
+<c-grid columns="3" fill="background">
+<img src="/images/learning.svg" alt="Straight forward learning">
+<img src="/images/learn-wherever.svg" alt="Learn how, when, and wherver">
+<img src="/images/qualify.svg" alt="Earn qualifications">
+<img src="/images/automate.svg" alt="Automate compliance">
+<img src="/images/train-fast.svg" alt="Fast and effective learning">
+<img src="/images/smart-management.svg" alt="Smarter staff management">
+<img src="/images/marketplace.svg" alt="Every course in one place">
+<img src="/images/marketplace-shopping.svg" alt="A thriving marketplace">
+<img src="/images/analyse-students.svg" alt="Analyse data in an instant">
+<img src="/images/paperless.svg" alt="So paperless">
 </c-grid>
 
 <c-revealer>
   <c-text>
-    My work at Chorck has helped to onboard thousands of new users and increase it’s rate of user growth. I continue to work with Chorck on new features and marking materials.
+    My work at Chorck has helped to drive user growth and retention, onboarding thousands of early adopters and working with key groups to improve the overall user experience. I continue to work with Chorck on new features and marketing materials.
   </c-text>
 </c-revealer>

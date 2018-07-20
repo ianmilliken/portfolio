@@ -92,11 +92,11 @@ stack:
 </c-revealer>
 
 <c-revealer>
-  <c-grid columns="2" fill="image">
-    <img src="/images/terry-the-t-rex.png" alt="Terry the T-Rex">
-    <img src="/images/occupied-olivia.png" alt="Occupied Olivia">
-    <img src="/images/queen-beeatrix.png" alt="Queen Beeatrix">
-    <img src="/images/invisibill.png" alt="Invisibill">
+  <c-grid columns="2" fill="images">
+    <img src="/images/terry.svg" alt="Terry the T-Rex">
+    <img src="/images/olivia.svg" alt="Occupied Olivia">
+    <img src="/images/beeatrix.svg" alt="Queen Beeatrix">
+    <img src="/images/invisibill.svg" alt="Invisibill">
   </c-grid>
 </c-revealer>
 
@@ -113,7 +113,7 @@ stack:
 </c-revealer>
 
 <c-revealer>
-  <c-grid columns="4" fill="background" narrow="true">
+  <c-grid columns="4" fill="background">
     <img src="/images/icon_01.svg" alt="Icon 01">
     <img src="/images/icon_02.svg" alt="Icon 02">
     <img src="/images/icon_03.svg" alt="Icon 03">
@@ -138,9 +138,9 @@ stack:
 </c-revealer>
 
 <c-revealer>
-  <c-grid columns="1-2" fill="background">
-    <img src="/images/logo.svg" alt="Marketplace Strategy Solutions lettermark">
-    <img src="/images/logo_alt_01.svg" alt="Marketplace Strategy Solutions full logo">
-    <img src="/images/logo_alt_02.svg" alt="Marketplace Strategy Solutions full logo">
+  <c-grid columns="1-2">
+    <wrapper color="#ffffff"><img src="/images/logo.svg" alt="Marketplace Strategy Solutions lettermark"></wrapper>
+    <wrapper color="#e6232c"><img src="/images/logo_alt_01.svg" alt="Marketplace Strategy Solutions full logo"></wrapper>
+    <wrapper color="#161617"><img src="/images/logo_alt_02.svg" alt="Marketplace Strategy Solutions full logo" /></wrapper>
   </c-grid>
 </c-revealer>

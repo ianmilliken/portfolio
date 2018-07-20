@@ -12,6 +12,7 @@ import Header from "../components/Editorial/Header/Header"
 import Grid from "../components/Editorial/Grid/Grid"
 import LogoWall from "../components/Editorial/LogoWall/LogoWall"
 import TextBlock from "../components/Editorial/TextBlock/TextBlock"
+import Wrapper from "../components/Editorial/Wrapper/Wrapper"
 
 import config from "../../data/SiteConfig"
 import "./work.css"
@@ -26,6 +27,7 @@ const RenderAst = new RehypeReact({
 		"c-logowall" : LogoWall,
 		"c-text" : TextBlock,
 		"c-revealer": Revealer,
+		"wrapper": Wrapper,
 	} 
 }).Compiler
 

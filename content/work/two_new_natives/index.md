@@ -67,7 +67,7 @@ stack:
 </c-revealer>
 
 <c-revealer container="true" curtain="true">
-  <p>Manage the content with that CMS there</p>
+  <p>WRITE HERE</p>
 </c-revealer>
 
 <c-video url="https://streamable.com/gyvch"></c-video>
@@ -81,12 +81,11 @@ stack:
 </c-revealer>
 
 <c-revealer container="true" curtain="true">
-  <p>Some content!</p>
+  <p>WRITE HERE</p>
 </c-revealer>
 
-
-<c-grid columns="1-2" colorOne="#fc4f4f" colorTwo="#16161d">
-<img src="/images/logo.png" alt="Two New Natives Main Logo">
-<img src="/images/logo-white.png" alt="Two New Natives Main Logo">
-<img src="/images/logo-white.png" alt="Two New Natives Main Logo">
+<c-grid columns="1-2">
+  <wrapper color="#ffffff"><img src="/images/logo.svg" alt="Two New Natives Main Logo"></wrapper>
+  <wrapper color="#16161d"><img src="/images/logo-white.svg" alt="Two New Natives Main Logo"></wrapper>
+  <wrapper color="#fc4f4f"><img src="/images/logo-white.svg" alt="Two New Natives Main Logo"></wrapper>
 </c-grid>

@@ -22,7 +22,7 @@ class Grid extends React.Component {
 		const bgColor = this.props.background ? this.props.background : "#ffffff"
 		return (
 			<Revealer>
-				<div className={`grid grid--${this.props.columns} gutter-top fill--${this.props.fill}`} style={{ backgroundColor: bgColor }}>
+				<div className={`grid grid--${this.props.columns} gutter-top fill--${this.props.fill}`} style={{ backgroundColor: this.props.fill ? bgColor : "" }}>
 					{this.props.children}
 				</div>
 			</Revealer>
