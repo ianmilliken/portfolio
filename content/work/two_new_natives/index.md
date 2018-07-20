@@ -1,6 +1,6 @@
 ---
 title: "Two New Natives"
-date: "2016-10-01"
+date: "2017-01-20"
 intro: A travel journal with an automated publishing system for galleries, and a headless CMS for easy content writing with live previews.
 link: "https://twonewnatives.com/"
 link_text: "Live Site"

@@ -155,6 +155,7 @@ export const navQuery = graphql`
 	query navQuery {
 		allMarkdownRemark(
 			filter: { fields: { name: { eq: "work" } } }
+			sort: {fields: [frontmatter___date], order: DESC}
 		) {
 			edges {
 				node {
