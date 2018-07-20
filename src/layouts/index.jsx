@@ -112,7 +112,7 @@ export default class MainLayout extends React.Component {
 			locationClass = "index"
 		}
 		return (
-			<div className={locationClass} style={{ backgroundColor: backgroundColor, color: textColor }}>
+			<div className={locationClass} style={{ backgroundColor: backgroundColor, color: textColor, paddingLeft: `${this.state.leftActive ? "4rem" : "0"}` }} onMouseMove={this.onMouseMove}>
 				<Helmet>
 					<title>{`${config.siteTitle} |  ${this.getLocalTitle()}`}</title>
 					<meta name="description" content={config.siteDescription} />
@@ -158,6 +158,9 @@ export const navQuery = graphql`
 		) {
 			edges {
 				node {
+					frontmatter {
+						title
+					}
 					fields {
 						slug
 					}

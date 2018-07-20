@@ -9,7 +9,7 @@ export default class Video extends React.Component {
 		return (
 			<div className="video-wrapper gutter-top">
 				<div className="video">
-					<ReactPlayer url={this.props.url} playing="true" muted="true" volume="0" loop="true" width="100%" height="100%" />
+					<ReactPlayer url={this.props.url} playing="true" muted="true" volume={0} loop="true" width="100%" height="100%" />
 				</div>
 			</div>
 		)

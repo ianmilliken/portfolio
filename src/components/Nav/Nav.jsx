@@ -15,75 +15,81 @@ class Nav extends React.Component {
 		this.props.onContactLink(e)
 	}
 
-	getNextLink() {
+	getLink( query, direction ) {
 		const edges = this.props.menu
 
 		const urls = _.map(edges, (obj) => {
-			return obj.node.fields.slug
+			return { 
+				url: obj.node.fields.slug,
+				title: obj.node.frontmatter.title
+			}
 		})
 
 		let value = _.findIndex(urls, (i) => {
-			return i === this.props.currentPath
+			return i.url === this.props.currentPath
 		})
 
-		if (value < urls.length - 1) {
-			value = value + 1
-		} else {
-			value = 0
+		if (direction === "next") {
+			if (value < urls.length - 1) {
+				// Increment by 1
+				value = value + 1
+			} else {
+				// Increment to first entry
+				value = 0
+			}
 		}
-		
-		return urls[value]
-	}
 
-	getPreviousLink() {
-		const edges = this.props.menu
-
-		const urls = _.map(edges, (obj) => {
-			return obj.node.fields.slug
-		})
-
-		let value = _.findIndex(urls, (i) => {
-			return i === this.props.currentPath
-		})
-
-		if (value > 0) {
-			value = value - 1
-		} else {
-			value = urls.length - 1
+		else if (direction === "previous") {
+			if (value > 0) {
+				// Decrement by 1
+				value = value - 1
+			} else {
+				// Decrement to last entry
+				value = urls.length - 1
+			}
 		}
-		
-		return urls[value]
+
+		if (query === "url") {
+			return urls[value].url
+		} 
+		else if (query === "title") {
+			return urls[value].title
+		}
 	}
 
 	render() {
 		if (!this.props.currentPath.includes("/work/")) {
 			return (
-				<nav className="nav">
+				<div className="nav">
 					<div className="nav__link nav__link--l">
 						<span className="nav__line" />
-						<a href="/" onClick={this.handleClick}><span>Contact</span></a>
+						<a href="/" onClick={this.handleClick}>
+							<span className="nav__text">Contact</span>
+						</a>
 					</div>
 					<div className="nav__link nav__link--r">
 						<span className="nav__line" />
-						<Link to="/about/">
-							<span>About</span>
-						</Link>
+						<a href="/about/">
+							<span className="nav__text">About</span>
+						</a>
 					</div>
-				</nav>
+				</div>
 			)
 		} else {
 			return (
 				<nav className="nav">
 					<div className="nav__link nav__link--l">
 						<span className="nav__line" />
-						<Link to={this.getPreviousLink()}>
-							<span>Previous</span>
+						<Link to={this.getLink("url", "previous")}>
+							<span className="nav__text">Previous</span>
+							<span className="nav__reveal">{this.getLink("title", "previous")}</span>
 						</Link>
 					</div>
 					<div className="nav__link nav__link--r">
 						<span className="nav__line" />
-						<Link to={this.getNextLink()}>
-							<span>Next</span>
+						<Link to={this.getLink("url", "next")}>
+							<span className="nav__text">Next</span>
+							<span className="nav__reveal">{this.getLink("title", "next")}</span>
 						</Link>
 					</div>
 				</nav>
