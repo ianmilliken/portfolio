@@ -30,35 +30,60 @@ stack:
   - Sketch
 ---
 
-## Automated gallery creation
+<c-revealer container="true" curtain="true">
+  <h2>Automated gallery creation</h2>
+</c-revealer>
 
-### Removing the need to create duplicate content across different platforms
+<c-revealer container="true" curtain="true">
+  <h3>Removing the need to create duplicate content across different platforms</h3>
+</c-revealer>
 
-Two New Natives hosts its images on community photography platforms like 500px and Flickr for social engagement. Their website synchronizes with these platfroms via API’s, so that when they create a new gallery on either one, it is automatically created on their site.
+<c-revealer container="true" curtain="true">
+  <p>Two New Natives hosts its images on community photography platforms like 500px and Flickr for social engagement. Their website synchronizes with these platfroms via API’s, so that when they create a new gallery on either one, it is automatically created on their site.</p>
+</c-revealer>
 
 <c-video url="https://streamable.com/1fd1b"></c-video>
 
-## Distraction free content
+<c-revealer container="true" curtain="true">
+  <h2>Distraction free content</h2>
+</c-revealer>
 
-### Making the site easy to navigate, with easy to digest content
+<c-revealer container="true" curtain="true">
+  <h3>Making the site easy to navigate, with easy to digest content</h3>
+</c-revealer>
 
-Paying special attention to providing clean, uncluttered layouts, organised and clear typography, and careful usage of colour pallete to frame the websites content were all top priorities.
+<c-revealer container="true" curtain="true">
+  <p>Paying special attention to providing clean, uncluttered layouts, organised and clear typography, and careful usage of colour pallete to frame the websites content were all top priorities.</p>
+</c-revealer>
 
 <c-video url="https://streamable.com/yrjdr"></c-video>
 
-## Live previews
+<c-revealer container="true" curtain="true">
+  <h2>Live previews</h2>
+</c-revealer>
 
-### Using NetlifyCMS to manage content
+<c-revealer container="true" curtain="true">
+  <h3>Using NetlifyCMS to manage content</h3>
+</c-revealer>
 
-Manage the content with that CMS there
+<c-revealer container="true" curtain="true">
+  <p>Manage the content with that CMS there</p>
+</c-revealer>
 
 <c-video url="https://streamable.com/gyvch"></c-video>
 
-## Handwritten logo
+<c-revealer container="true" curtain="true">
+  <h2>Handwritten logo</h2>
+</c-revealer>
 
-### Giving the brand a personal touch
+<c-revealer container="true" curtain="true">
+  <h3>Giving the brand a personal touch</h3>
+</c-revealer>
 
-Some content!
+<c-revealer container="true" curtain="true">
+  <p>Some content!</p>
+</c-revealer>
+
 
 <c-grid columns="1-2" colorOne="#fc4f4f" colorTwo="#16161d">
 <img src="/images/logo.png" alt="Two New Natives Main Logo">
