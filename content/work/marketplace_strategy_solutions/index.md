@@ -35,15 +35,15 @@ stack:
   - Affinity Designer
 ---
 
-<c-revealer container="true" curtain="true" margin="true">
-  <h2 style="margin-top: 0;">New marketing site</h2>
+<c-revealer container="true" margin="true">
+  <h2>New marketing site</h2>
 </c-revealer>
 
-<c-revealer container="true" curtain="true">
+<c-revealer container="true">
   <h3>Opening the door to a new demographic of customers</h3>
 </c-revealer>
 
-<c-revealer container="true" curtain="true">
+<c-revealer container="true">
   <p>MSS's new website has been built from the ground up using modern technologies to ensure both a good developer and user experience. It's integrated with their CRM to make new customer acquisition a doddle.</p>
 </c-revealer>
 
@@ -51,15 +51,15 @@ stack:
   <c-video url="https://streamable.com/p478y"></c-video>
 </c-revealer>
 
-<c-revealer container="true" curtain="true">
+<c-revealer container="true" margin="true">
   <h2>Easy peasy publishing</h2>
 </c-revealer>
 
-<c-revealer container="true" curtain="true">
+<c-revealer container="true">
   <h3>A simple and extendable content-focused CMS</h3>
 </c-revealer>
 
-<c-revealer container="true" curtain="true">
+<c-revealer container="true">
   <p>The CMS is optimised for content creation with a draft and review system, live editor previews, and custom editor widgets. It allows for the creation of many different content types including landing pages and case studies.</p>
 </c-revealer>
 
@@ -67,15 +67,15 @@ stack:
   <c-video url="https://streamable.com/0ybtc"></c-video>
 </c-revealer>
 
-<c-revealer container="true" curtain="true">
+<c-revealer container="true" margin="true">
   <h2>Fine tuned customer journeys</h2>
 </c-revealer>
 
-<c-revealer container="true" curtain="true">
+<c-revealer container="true">
   <h3>Helping to capture new business with well-structured content</h3>
 </c-revealer>
 
-<c-revealer container="true" curtain="true">
+<c-revealer container="true">
   <p>Every page has a carefully crafted user journey to keep visitors engaged. CTAs, positive stats, and other engaging content stand out in the UI and have planned placement to capture each user's attention at the right moment.</p>
 </c-revealer>
 
@@ -83,11 +83,15 @@ stack:
   <c-video url="https://streamable.com/rzeem"></c-video>
 </c-revealer>
 
-<c-revealer container="true" curtain="true">
+<c-revealer container="true" margin="true">
   <h2>Character illustrations</h2>
 </c-revealer>
 
-<c-revealer container="true" curtain="true">
+<c-revealer container="true">
+  <h3>Helping new customers to identify the services they need</h3>
+</c-revealer>
+
+<c-revealer container="true">
   <p>As a part of the rebrand MSS commissioned some original character illustrations to represent their 4 most common types of client. Terry, Olivia, Beatrix and Invisabill were designed to be fun and quickly draw visitors to the right service solutions.</p>
 </c-revealer>
 
@@ -100,15 +104,15 @@ stack:
   </c-grid>
 </c-revealer>
 
-<c-revealer container="true" curtain="true">
+<c-revealer container="true" margin="true">
   <h2>Iconography</h2>
 </c-revealer>
 
-<c-revealer container="true" curtain="true">
+<c-revealer container="true">
   <h3>Providing clear visual cues to important content</h3>
 </c-revealer>
 
-<c-revealer container="true" curtain="true">
+<c-revealer container="true">
   <p>A starter pack of simple line icons for MSS's most important B2B services, designed to compliment content and provide a quick a visual reference to their services.</p>
 </c-revealer>
 
@@ -125,15 +129,15 @@ stack:
   </c-grid>
 </c-revealer>
 
-<c-revealer container="true" curtain="true">
+<c-revealer container="true" margin="true">
   <h2>Lettermark logo</h2>
 </c-revealer>
 
-<c-revealer container="true" curtain="true">
+<c-revealer container="true">
   <h3>A nod to the old brand, but looking to the future</h3>
 </c-revealer>
 
-<c-revealer container="true" curtain="true">
+<c-revealer container="true">
   <p>A contemporary lettermark with sharp edges that conceptually imbues MSS's values and services into the shape. MSS were formally known as Marketplace Communications - the lettermark was chosen over other concepts because it made the rebrand transition smoother.</p>
 </c-revealer>
 

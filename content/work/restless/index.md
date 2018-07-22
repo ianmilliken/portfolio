@@ -16,15 +16,15 @@ stack:
   - Illustrator
 ---
 
-<c-revealer container="true" curtain="true" margin="true">
+<c-revealer container="true" margin="true">
   <h2>Lettermark logo</h2>
 </c-revealer>
 
-<c-revealer container="true" curtain="true">
+<c-revealer container="true">
   <h3>Conveying hidden meaning throughout its form</h3>
 </c-revealer>
 
-<c-revealer container="true" curtain="true">
+<c-revealer container="true">
   <p>The lettermark’s form is made up of small symbols which are references to the types of activities Restless alert their customers to.</p>
 </c-revealer>
 
@@ -32,15 +32,15 @@ stack:
 	<img src="/images/logo.svg" alt="Restless logo lettermark">
 </c-grid>
 
-<c-revealer container="true" curtain="true">
+<c-revealer container="true" margin="true">
   <h2>Iconography</h2>
 </c-revealer>
 
-<c-revealer container="true" curtain="true">
+<c-revealer container="true">
   <h3>Clean 'linecons'</h3>
 </c-revealer>
 
-<c-revealer container="true" curtain="true">
+<c-revealer container="true">
   <p>An initial collection of vector line icons for use in marketing materials and as supporting imagery for Restless’ initial content plan.</p>
 </c-revealer>
 
@@ -63,15 +63,15 @@ stack:
   <img src="/images/camping.svg" alt="Camping Icon">
 </c-grid>
 
-<c-revealer container="true" curtain="true">
+<c-revealer container="true" margin="true">
   <h2>Typography</h2>
 </c-revealer>
 
-<c-revealer container="true" curtain="true">
+<c-revealer container="true">
   <h3>Complimenting the logo and linecons</h3>
 </c-revealer>
 
-<c-revealer container="true" curtain="true">
+<c-revealer container="true">
   <p>Restless picked Nanami Rounded, a clean & contemporary geometric sans-serif, as their brand font from a list of suggestions. Nanami compliments the branding well thanks to its soft edges. It's also highly legible making it a good choice for marketing and editorial purposes.</p>
 </c-revealer>
 

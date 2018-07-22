@@ -33,6 +33,10 @@
 		font-weight: 300;
 		line-height: 1.6;
 	}
+
+	& .reveal-wrapper h2 {
+		margin-top: 0;
+	}
 }
 
 .header--work {

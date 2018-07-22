@@ -1,9 +1,3 @@
-
-
-.reveal-wrapper {
-	overflow: hidden;
-}
-
 .reveal {
 	position: relative;
 	&.is-active {
@@ -24,6 +18,7 @@
 		animation-name: blind;
 		animation-duration: 1s;
 		animation-timing-function: cubic-bezier(0.785, 0.135, 0.150, 0.860);
+		animation-fill-mode: forwards;
 	}
 }
 
@@ -37,7 +32,7 @@
 
 @keyframes reveal {
 	0% {
-		transform: translateY(100%);
+		transform: translateY(200%);
 		opacity: 0;
 	}
 
