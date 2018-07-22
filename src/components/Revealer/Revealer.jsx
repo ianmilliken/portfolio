@@ -14,8 +14,11 @@ class Revealer extends React.Component {
 		this.handleLeave = this.handleLeave.bind(this)
 	}
 
-	handleEnter() {
-		this.setState({ inView: true })
+	handleEnter({ previousPosition }) {
+		this.setState({ 
+			inView: true,
+			prevPosition: previousPosition
+		})
 	}
 
 	handleLeave() {
@@ -32,8 +35,8 @@ class Revealer extends React.Component {
 					to .reveal which effect it's position for the onEnter event
 				*/}
 
-				<div className="reveal-wrapper">
-					<div className={`reveal${this.state.inView ? " is-active" : ""}${this.props.container ? " container" : ""}${this.props.curtain ? " has-curtain" : ""}`} style={{ marginTop: marginTop }}>
+				<div className="reveal-wrapper" style={{ marginTop: marginTop }}>
+					<div className={`reveal${this.state.inView && this.state.prevPosition !== "above" ? " is-active" : ""}${this.props.container ? " container" : ""}${this.props.curtain ? " has-curtain" : ""}`}>
 						<div className={`reveal-blind${this.state.inView ? " is-active" : ""}`}></div>
 						{this.props.children}
 					</div>
