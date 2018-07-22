@@ -88,7 +88,7 @@ stack:
 </c-revealer>
 
 <c-revealer container="true" curtain="true">
-  <p>As a part of the rebrand MSS commissioned some original character illustrations to represent their 4 most common types of client. Terry, Olivia, Beatrix and invisabill were designed with the purpose of immediately drawing visitors to the right service solution in a fun way. </p>
+  <p>As a part of the rebrand MSS commissioned some original character illustrations to represent their 4 most common types of client. Terry, Olivia, Beatrix and Invisabill were designed to be fun and quickly draw visitors to the right service solutions.</p>
 </c-revealer>
 
 <c-revealer>
@@ -109,7 +109,7 @@ stack:
 </c-revealer>
 
 <c-revealer container="true" curtain="true">
-  <p>A starter pack of simple 'linecons' for MSS's most important B2B services, designed to compliment content and provide a quick a visual reference to their services.</p>
+  <p>A starter pack of simple line icons for MSS's most important B2B services, designed to compliment content and provide a quick a visual reference to their services.</p>
 </c-revealer>
 
 <c-revealer>

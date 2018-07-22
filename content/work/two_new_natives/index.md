@@ -53,7 +53,7 @@ stack:
 </c-revealer>
 
 <c-revealer container="true" curtain="true">
-  <p>Paying special attention to providing clean, uncluttered layouts, organised and clear typography, and careful usage of colour pallete to frame the websites content were all top priorities.</p>
+  <p>To provide a distraction-free reading experience for visitors, spacious layouts with ample white space and clear typography are carefully balanced together with images, colour, and meta content.</p>
 </c-revealer>
 
 <c-video url="https://streamable.com/yrjdr"></c-video>
@@ -63,25 +63,25 @@ stack:
 </c-revealer>
 
 <c-revealer container="true" curtain="true">
-  <h3>Using NetlifyCMS to manage content</h3>
+  <h3>Giving authors instant and accurate feedback on the look of their content</h3>
 </c-revealer>
 
 <c-revealer container="true" curtain="true">
-  <p>WRITE HERE</p>
+  <p>A WYSISYG experience, but without the code pollution. Editor live previews are real-time and responsive, giving a 100% accurate representation of what visitors will see, and allowing for a super fast and efficient authoring experience.</p>
 </c-revealer>
 
 <c-video url="https://streamable.com/gyvch"></c-video>
 
 <c-revealer container="true" curtain="true">
-  <h2>Handwritten logo</h2>
+  <h2>Signature-esqe logo</h2>
 </c-revealer>
 
 <c-revealer container="true" curtain="true">
-  <h3>Giving the brand a personal touch</h3>
+  <h3>Represting the people at the root of the Two New Native's stories</h3>
 </c-revealer>
 
 <c-revealer container="true" curtain="true">
-  <p>WRITE HERE</p>
+  <p>A signature is rarely identical twice, consistently smooth, or written the same by different people. Two New Natives felt that this was representative of their brand beliefs and so chose it as the style to explore.</p>
 </c-revealer>
 
 <c-grid columns="1-2">

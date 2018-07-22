@@ -44,7 +44,7 @@ stack:
 </c-revealer>
 
 <c-revealer container="true" curtain="true">
-  <p>I created a drag and drop system to allow business users an easy, intuitive way to assign both their employees and courseware to courses. This allows users a very fast way to create, modify, and keep track of courses.</p>
+  <p>A drag and drop system to allow business users an easy, intuitive way to assign both their employees and courseware to courses. This allows users a very fast way to create, modify, and keep track of courses.</p>
 </c-revealer>
 
 <c-revealer>
@@ -142,6 +142,6 @@ stack:
 
 <c-revealer>
   <c-text>
-    By working with key groups to improve the overall user experience, my work at Chorck has helped to drive user growth and retention and onboard thousands of early adopters. I continue to work with Chorck on new features and marketing materials.
+    By working with key groups and stakeholders to improve the overall user experience, my work at Chorck has helped to drive user growth and retention and onboard thousands of early adopters. I continue to work with Chorck on new features and marketing materials.
   </c-text>
 </c-revealer>
