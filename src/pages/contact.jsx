@@ -20,7 +20,7 @@ class ContactPage extends Component {
 							<div className="contact-flex">
 								<div className="contact-link-wrapper">
 									<a className="contact-link" href={`tel:${config.userMobile}`}>{config.userMobile}</a>
-									<a className="contact-link" href={`mailto:${config.userEmail}`}>{config.userEmail}</a>
+									<a className="contact-link gutter-top--small" href={`mailto:${config.userEmail}`}>{config.userEmail}</a>
 								</div>
 								<div className="contact-social contact-link-wrapper">
 									<UserLinks config={config} icon />

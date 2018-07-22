@@ -1,6 +1,7 @@
 import React from "react"
 import Helmet from "react-helmet"
 import RehypeReact from "rehype-react" 
+import Link from "gatsby-link"
 import SEO from "../components/SEO/SEO"
 
 import Transition from "../components/Transition/Transition"
@@ -56,7 +57,7 @@ export default class PostTemplate extends React.Component {
 							<Revealer>
 								<h1 className="work__title anim-title">{post.title}</h1>
 							</Revealer>
-							{ post.link ? <div className="work__link anim-title delay-400"><a href={post.link} target="_blank">{post.link_text} <Arrow classes="work__arrow" /></a></div> : "" }
+							{ post.link ? <div className="work__link self--end anim-title delay-400"><a href={post.link} target="_blank">{post.link_text} <Arrow classes="work__arrow" /></a></div> : "" }
 						</div>
 						<div>
 							<div className="work__list">
@@ -94,9 +95,15 @@ export default class PostTemplate extends React.Component {
 						{/* <div dangerouslySetInnerHTML={{ __html: postNode.html }} /> */}
 						<div className="work-content">{RenderAst(postNode.htmlAst)}</div>
 					</div>
-					<div className="container gutter-top center">
-						<h4>Ready to get in touch?</h4>
-						<a href="/">Contact me</a>
+					<div className="container gutter-top--large center">
+						<Revealer>
+							<div className="work__contact">
+								<h4 className="work__title">Ready to get in touch?</h4>
+								<div className="work__link gutter-top--medium">
+									<Link to="/contact/">Contact me</Link>
+								</div>
+							</div>
+						</Revealer>
 					</div>
 				</div>
 			</Transition>
