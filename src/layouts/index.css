@@ -596,23 +596,44 @@ main {
 }
 
 .wipe--entering .loader-logo svg {
-	transform: translateY(-70vh);
-	opacity: 1;
+	& #i,
+	& #a,
+	& #n,
+	& #dot {
+		transform: translateY(-70vh);
+		opacity: 1;
+	}
+	
 }
 
 .wipe--entered .loader-logo svg {
-	transform: translateY(70vh);
-	opacity: 1;
+	& #i,
+	& #a,
+	& #n,
+	& #dot {
+		transform: translateY(70vh);
+		opacity: 1;
+	}
 }
 
 .wipe--exiting .loader-logo svg {
-	transform: translateY(0);
-	opacity: 1;
+	& #i,
+	& #a,
+	& #n,
+	& #dot {
+		transform: translateY(0);
+		opacity: 1;
+	}
 }
 
 .wipe--exited .loader-logo svg {
-	transform: translateY(0);
-	opacity: 1;
+	& #i,
+	& #a,
+	& #n,
+	& #dot {
+		transform: translateY(0);
+		opacity: 1;
+	}
 }
 
 .loader-logo  {
@@ -627,10 +648,32 @@ main {
 	& svg {
 		position: absolute;
 		z-index: 3;
+		overflow: visible;
+	}
+
+	& svg #i,
+	& svg #a,
+	& svg #n,
+	& svg #dot {
 		transform: translateY(100%);
-		transition: all 800ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+		transition: all 700ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
 		transition-delay: 100ms;
 		will-change: opacity, transform;
+	}
+
+	& svg #a {
+		transition-duration: 650ms;
+		transition-delay: 150ms;
+	}
+
+	& svg #dot {
+		transition-duration: 600ms;
+		transition-delay: 200ms;
+	}
+
+	& svg #n {
+		transition-duration: 550ms;
+		transition-delay: 250ms;
 	}
 }
 
