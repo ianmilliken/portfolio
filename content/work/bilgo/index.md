@@ -47,11 +47,11 @@ stack:
 </c-revealer>
 
 <c-revealer container="true" curtain="true">
-  <h3>Eradicating uncomplimentary negative space for a better content flow</h3>
+  <h3>Eradicating excess negative space for a better content flow</h3>
 </c-revealer>
 
 <c-revealer container="true" curtain="true">
-  <p>A pinterest-inspired layout for article listings that improves the look and flow of the content by tackling uncomplimentary negative space with support down to IE6.</p>
+  <p>A pinterest-inspired layout for article listings that improves the look and flow of the content by tackling excess negative space with support down to IE6.</p>
 </c-revealer>
 
 <c-revealer>

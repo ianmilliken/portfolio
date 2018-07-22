@@ -21,7 +21,7 @@ stack:
 </c-revealer>
 
 <c-revealer container="true" curtain="true">
-  <h3>Conveying hidden meaning throughout it's form</h3>
+  <h3>Conveying hidden meaning throughout its form</h3>
 </c-revealer>
 
 <c-revealer container="true" curtain="true">
@@ -72,7 +72,7 @@ stack:
 </c-revealer>
 
 <c-revealer container="true" curtain="true">
-  <p>Restless picked Nanami Rounded, a clean & contemporary geometric sans-serif, as their brand font from a list of suggestions. Nanami compliments the branding well thanks to it's soft edges. It's also highly legible making it a good choice for marketing and editorial purposes.</p>
+  <p>Restless picked Nanami Rounded, a clean & contemporary geometric sans-serif, as their brand font from a list of suggestions. Nanami compliments the branding well thanks to its soft edges. It's also highly legible making it a good choice for marketing and editorial purposes.</p>
 </c-revealer>
 
 <c-grid columns="1-2" fill="background">

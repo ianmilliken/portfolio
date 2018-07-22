@@ -2,7 +2,7 @@
 title: "Marketplace Strategy Solutions"
 date: "2018-03-14"
 intro: >-
-  MSS is a traditional and digital marketing agency that have helped world famous brands with their marketing campaigns and strategies for the past 30 years.
+  MSS is an intergrated marketing agency that have helped world-famous brands implement marketing campaigns and strategies for the past 30 years.
 
   They were in the midst of a brand transformation when their regular creatives let them down. They hired me to create a new direction for their brand and website.
 link: "https://marketplacestrategysolutions.com.au/"
@@ -44,7 +44,7 @@ stack:
 </c-revealer>
 
 <c-revealer container="true" curtain="true">
-  <p>Marketplace's new website has been built from the ground up using modern technologies to ensure both a good developer and user experience. It's integrated with their CRM to make new customer acquisition a doddle.</p>
+  <p>MSS's new website has been built from the ground up using modern technologies to ensure both a good developer and user experience. It's integrated with their CRM to make new customer acquisition a doddle.</p>
 </c-revealer>
 
 <c-revealer>
@@ -72,11 +72,11 @@ stack:
 </c-revealer>
 
 <c-revealer container="true" curtain="true">
-  <h3>Helping to capture new business with well structured content</h3>
+  <h3>Helping to capture new business with well-structured content</h3>
 </c-revealer>
 
 <c-revealer container="true" curtain="true">
-  <p>Every page has a carefully crafted user journey to keep users engaged. CTA's, positive stats, and other alluring information stand out in the UI and have planned placement to capture each users attention at the right moment.</p>
+  <p>Every page has a carefully crafted user journey to keep visitors engaged. CTAs, positive stats, and other engaging content stand out in the UI and have planned placement to capture each user's attention at the right moment.</p>
 </c-revealer>
 
 <c-revealer>
@@ -88,7 +88,7 @@ stack:
 </c-revealer>
 
 <c-revealer container="true" curtain="true">
-  <p>As a part of the rebrand MSS commissioned some original character illustrations to represent their 4 most common types of client.</p>
+  <p>As a part of the rebrand MSS commissioned some original character illustrations to represent their 4 most common types of client. Terry, Olivia, Beatrix and invisabill were designed with the purpose of immediately drawing visitors to the right service solution in a fun way. </p>
 </c-revealer>
 
 <c-revealer>
@@ -109,7 +109,7 @@ stack:
 </c-revealer>
 
 <c-revealer container="true" curtain="true">
-  <p>A starter pack of simple linecons for Marketplace's most important B2B services, designed to compliment content and provide a quick a visual reference to their services.</p>
+  <p>A starter pack of simple 'linecons' for MSS's most important B2B services, designed to compliment content and provide a quick a visual reference to their services.</p>
 </c-revealer>
 
 <c-revealer>
@@ -134,7 +134,7 @@ stack:
 </c-revealer>
 
 <c-revealer container="true" curtain="true">
-  <p>A contemporary lettermark with sharp edges that conceptually imbues Marketplace's values and services into the shape. MSS were formally known as Marketplace Communications, the lettermark was chosen over other concepts because it made the rebrand transition smoother.</p>
+  <p>A contemporary lettermark with sharp edges that conceptually imbues MSS's values and services into the shape. MSS were formally known as Marketplace Communications - the lettermark was chosen over other concepts because it made the rebrand transition smoother.</p>
 </c-revealer>
 
 <c-revealer>

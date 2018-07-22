@@ -39,7 +39,7 @@ stack:
 </c-revealer>
 
 <c-revealer container="true" curtain="true">
-  <p>Two New Natives hosts its images on community photography platforms like 500px and Flickr for social engagement. Their website synchronizes with these platfroms via API’s, so that when they create a new gallery on either one, it is automatically created on their site.</p>
+  <p>Two New Natives hosts its images on community photography platforms like 500px and Flickr for social engagement. Their website synchronizes with these platfroms via APIs, so that when they create a new gallery on either one, it is automatically created on their site.</p>
 </c-revealer>
 
 <c-video url="https://streamable.com/1fd1b"></c-video>
@@ -49,7 +49,7 @@ stack:
 </c-revealer>
 
 <c-revealer container="true" curtain="true">
-  <h3>Making the site easy to navigate, with easy to digest content</h3>
+  <h3>Making the site simple to navigate, with easy to digest content</h3>
 </c-revealer>
 
 <c-revealer container="true" curtain="true">

@@ -60,7 +60,7 @@ stack:
 </c-revealer>
 
 <c-revealer container="true" curtain="true">
-  <p>Users managing lists of hundreds or thousands of students or courses need a fast way to refine that data. The smart search tool takes a users query and makes weighted suggestions based on the parameters they select and value they provide.</p>
+  <p>Users managing lists of hundreds or thousands of students or courses need a fast way to refine that data. The smart search tool takes a user's query and makes weighted suggestions based on the parameters they select and value they provide.</p>
 </c-revealer>
 
 <c-revealer>
@@ -92,7 +92,7 @@ stack:
 </c-revealer>
 
 <c-revealer container="true" curtain="true">
-  <p>The calendar allows administrators to see past, present, and upcoming bookings in colour coded bite-size peices. Updating or accessing additional booking information is revealed by clicking on them, and the view can be refined to month, week, or day timelines.</p>
+  <p>The calendar allows administrators to see past, present, and upcoming bookings in colour coded bite-size pieces. Updating or accessing additional booking information can be managed by clicking on them, and the view can be refined to month, week, or day timelines.</p>
 </c-revealer>
 
 <c-revealer>
@@ -142,6 +142,6 @@ stack:
 
 <c-revealer>
   <c-text>
-    My work at Chorck has helped to drive user growth and retention, onboarding thousands of early adopters and working with key groups to improve the overall user experience. I continue to work with Chorck on new features and marketing materials.
+    By working with key groups to improve the overall user experience, my work at Chorck has helped to drive user growth and retention and onboard thousands of early adopters. I continue to work with Chorck on new features and marketing materials.
   </c-text>
 </c-revealer>
