@@ -125,27 +125,6 @@ export default class MainLayout extends React.Component {
 				<main>{children()}</main>
 				<Footer config={config} />
 				<div className={`overlay ${ this.state.contact ? `is-active` : ``}`} />
-
-				<div className={`contact-panel ${ this.state.contact ? `is-active` : ``}`}>
-					<div className="container">
-						<div className="contact-grid">
-							<div>
-								<h2 className="feature-title">Get in touch</h2>
-								<p className="gutter-top--medium">I am currently avaialble for hire.</p>
-								<p>If you’re interested in working with me, then feel free  call or email me, or find me on social media.</p>
-							</div>
-							<div className="contact-flex">
-								<div className="contact-link-wrapper">
-									<a className="contact-link" href={`tel:${config.userMobile}`}>{config.userMobile}</a>
-									<a className="contact-link" href={`mailto:${config.userEmail}`}>{config.userEmail}</a>
-								</div>
-								<div className="contact-social contact-link-wrapper">
-									<UserLinks config={config} icon />
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
 			</div>
 		)
 	}

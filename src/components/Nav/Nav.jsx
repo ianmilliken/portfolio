@@ -65,7 +65,7 @@ class Nav extends React.Component {
 					<div className="nav">
 						<div className="nav__link nav__link--l">
 							<span className="nav__line" />
-							<a href="/" onClick={this.handleClick}>
+							<a href="/contact/">
 								<span className="nav__text">Contact</span>
 							</a>
 						</div>
