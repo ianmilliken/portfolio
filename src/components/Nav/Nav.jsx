@@ -1,6 +1,7 @@
 import React from "react"
 import Link from "gatsby-link"
 import _ from "lodash"
+import DefaultTransition from "../Transition/DefaultTransition"
 import "./Nav.css"
 
 
@@ -60,39 +61,43 @@ class Nav extends React.Component {
 	render() {
 		if (!this.props.currentPath.includes("/work/")) {
 			return (
-				<div className="nav">
-					<div className="nav__link nav__link--l">
-						<span className="nav__line" />
-						<a href="/" onClick={this.handleClick}>
-							<span className="nav__text">Contact</span>
-						</a>
-					</div>
-					<div className="nav__link nav__link--r">
-						<span className="nav__line" />
-						<a href="/about/">
-							<span className="nav__text">About</span>
-						</a>
-					</div>
-				</div>
+				<DefaultTransition>
+					<div className="nav">
+						<div className="nav__link nav__link--l">
+							<span className="nav__line" />
+							<a href="/" onClick={this.handleClick}>
+								<span className="nav__text">Contact</span>
+							</a>
+						</div>
+						<div className="nav__link nav__link--r">
+							<span className="nav__line" />
+							<a href="/about/">
+								<span className="nav__text">About</span>
+							</a>
+						</div>
+					</div>	
+				</DefaultTransition>
 			)
 		} else {
 			return (
-				<nav className="nav">
-					<div className="nav__link nav__link--l">
-						<span className="nav__line" />
-						<Link to={this.getLink("url", "previous")}>
-							<span className="nav__text">Previous</span>
-							<span className="nav__reveal">{this.getLink("title", "previous")}</span>
-						</Link>
-					</div>
-					<div className="nav__link nav__link--r">
-						<span className="nav__line" />
-						<Link to={this.getLink("url", "next")}>
-							<span className="nav__text">Next</span>
-							<span className="nav__reveal">{this.getLink("title", "next")}</span>
-						</Link>
-					</div>
-				</nav>
+				<DefaultTransition>
+					<nav className="nav">
+						<div className="nav__link nav__link--l">
+							<span className="nav__line" />
+							<Link to={this.getLink("url", "previous")}>
+								<span className="nav__text">Previous</span>
+								<span className="nav__reveal">{this.getLink("title", "previous")}</span>
+							</Link>
+						</div>
+						<div className="nav__link nav__link--r">
+							<span className="nav__line" />
+							<Link to={this.getLink("url", "next")}>
+								<span className="nav__text">Next</span>
+								<span className="nav__reveal">{this.getLink("title", "next")}</span>
+							</Link>
+						</div>
+					</nav>
+				</DefaultTransition>
 			)
 		}
 	}

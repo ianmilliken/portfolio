@@ -1,3 +1,10 @@
+.entered .nav__link,
+.exited .nav__link,
+.exiting .nav__link {
+	transform: translateX(0);
+	opacity: 1;
+}
+
 .nav__link {
 	position: fixed;
 	z-index: 1;
@@ -6,8 +13,15 @@
 	width: 8rem;
 	font-size: 1.4rem;
 
+	opacity: 0;
+
+	transition: all 600ms ease;
+	transition-delay: 200ms;
+	will-change: transform, opacity;
+
 	&--l {
 		left: 0;
+		transform: translateX(-25%);
 
 		& > .nav__line {
 			left: 0;
@@ -30,6 +44,7 @@
 
 	&--r {
 		right: 0;
+		transform: translateX(25%);
 
 		& > .nav__line {
 			right: 0;

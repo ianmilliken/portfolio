@@ -11,6 +11,7 @@ import Circle from "../components/Icons/Circle"
 import UserLinks from "../components/UserLinks/UserLinks"
 
 import Transition from "../components/Transition/Transition"
+import DefaultTransition from "../components/Transition/DefaultTransition"
 
 import config from "../../data/SiteConfig"
 import "./index.css"
@@ -119,7 +120,7 @@ export default class MainLayout extends React.Component {
 				</Helmet>
 				<Circle classes="shape shape--left" color="#00DEA1" />
 				<Triangle classes="shape shape--right" color="#00DEA1" />
-				<Transition><Header config={config} /></Transition>
+				<DefaultTransition><Header config={config} /></DefaultTransition>
 				<Nav menu={this.props.data.allMarkdownRemark.edges} onContactLink={this.handleContactLink} currentPath={pathname} />
 				<main>{children()}</main>
 				<Footer config={config} />

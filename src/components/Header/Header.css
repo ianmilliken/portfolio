@@ -6,3 +6,23 @@
 	width: 100%;
 	padding: 4rem 6rem;
 }
+
+.entered .header__link,
+.exited .header__link,
+.exiting .header__link {
+	transform: translateY(0);
+	opacity: 1;
+}
+
+.header__link {
+	transform: translateY(-25%);
+	opacity: 0;
+	transition: all 600ms ease;
+	will-change: transform, opacity;
+	& + .header__link {
+		transition-delay: 200ms;
+	}
+	& + .header__link + .header__link {
+		transition-delay: 400ms;
+	}
+}

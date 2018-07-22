@@ -10,7 +10,7 @@ class Header extends React.Component {
 		const { config } = this.props
 		return (
 			<div className="header">
-				<Link to="/"><Logo /></Link>
+				<Link to="/" className="header__link"><Logo /></Link>
 				<UserLinks config={config} icon />
 			</div>
 		)

@@ -2,10 +2,9 @@ import React from "react"
 import { Transition as ReactTransition } from "react-transition-group"
 import getTransitionStyle from "../../utils/getTransitionStyle"
 import { historyExitingEventType, timeout } from "../../../gatsby-browser"
-import Logo from "../Logo/Logo"
 
 
-class Transition extends React.Component {
+class DefaultTransition extends React.Component {
 
 	static getDerivedStateFromProps({ exiting }) {
 		if (exiting) {
@@ -45,12 +44,7 @@ class Transition extends React.Component {
 		return (
 			<ReactTransition {...transitionProps}>
 				{status => (
-					<div className={`wipe wipe--${status}`}>
-						<div className={`anim anim--${status}`}>
-							<div className="layer1"></div>
-							<div className="layer2"></div>
-						</div>
-						<div className="loader-logo"><Logo width="105" height="101" /></div>
+					<div className={`${status}`}>
 						{this.props.children}
 					</div>
 				)}
@@ -60,4 +54,4 @@ class Transition extends React.Component {
 }
 
 
-export default Transition
+export default DefaultTransition

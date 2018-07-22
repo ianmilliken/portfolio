@@ -492,20 +492,6 @@ main {
 	}
 }
 
-.anim {
-	position: fixed;
-	width: 100vw;
-	pointer-events: none;
-}
-
-.anim--entering {
-	z-index: 2;
-	animation-name: animEnter;
-	animation-duration: 800ms;
-	animation-timing-function: ease;
-	animation-iteration-count: 1;
-}
-
 .anim-title {
 	position: relative;
 	display: block;
@@ -538,14 +524,6 @@ main {
 	}
 }
 
-.anim--exiting {
-	z-index: 2;
-	animation-name: animExit;
-	animation-duration: 800ms;
-	animation-timing-function: ease;
-	animation-iteration-count: 1;
-}
-
 .delay-100 { transition-delay: 100ms; }
 .delay-200 { transition-delay: 200ms; }
 .delay-300 { transition-delay: 300ms; }
@@ -556,44 +534,6 @@ main {
 .delay-800 { transition-delay: 800ms; }
 .delay-900 { transition-delay: 900ms; }
 .delay-1000 { transition-delay: 1s; }
-
-@keyframes animEnter {
-	0% {
-		background-color: var(--brandColor);
-		height: 0;
-		transform: translateY(-100%);
-	}
-
-	50% {
-		height: 400vh;
-		transform: translateY(0%);
-	}
-
-	100% {
-		background-color: var(--brandColor);
-		height: 100vh;
-		transform: translateY(100%);
-	}
-}
-
-@keyframes animExit {
-	0% {
-		background-color: var(--brandBlack);
-		height: 100vh;
-		transform: translateY(100%);
-	}
-
-	50% {
-		height: 400vh;
-		transform: translateY(0%);
-	}
-
-	100% {
-		background-color: var(--brandBlack);
-		height: 0;
-		transform: translateY(-100%);
-	}
-}
 
 .dot {
 	position: relative;
@@ -640,6 +580,151 @@ main {
 
 	100% {
 		opacity: 0;
+	}
+}
+
+/*
+ *
+ * Loading screen
+ *
+ */
+
+.wipe--exited .loader-logo,
+.wipe--exiting .loader-logo,
+.wipe--entering .loader-logo {
+	z-index: 2;
+}
+
+.wipe--entering .loader-logo svg {
+	transform: translateY(-70vh);
+	opacity: 1;
+}
+
+.wipe--entered .loader-logo svg {
+	transform: translateY(70vh);
+	opacity: 1;
+}
+
+.wipe--exiting .loader-logo svg {
+	transform: translateY(0);
+	opacity: 1;
+}
+
+.wipe--exited .loader-logo svg {
+	transform: translateY(0);
+	opacity: 1;
+}
+
+.loader-logo  {
+	position: fixed;
+	z-index: -1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+
+	& svg {
+		position: absolute;
+		z-index: 3;
+		transform: translateY(100%);
+		transition: all 800ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+		transition-delay: 100ms;
+		will-change: opacity, transform;
+	}
+}
+
+.anim {
+	position: fixed;
+	width: 100vw;
+	pointer-events: none;
+	background-color: transparent;
+	transition: all 300ms ease;
+}
+
+.anim--entering {
+	z-index: 2;
+	animation-name: fadeBackground;
+	animation-duration: 800ms;
+	animation-timing-function: ease;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+
+	& .layer1 {
+		animation-name: animEnter;
+		animation-duration: 800ms;
+		animation-timing-function: ease;
+		animation-iteration-count: 1;
+		animation-fill-mode: forwards;
+	}
+}
+
+.anim--exiting {
+	z-index: 2;
+
+	& .layer1 {
+		animation-name: animExit;
+		animation-duration: 800ms;
+		animation-timing-function: ease;
+		animation-iteration-count: 1;
+		animation-fill-mode: forwards;
+	}
+}
+
+.anim--exited {
+	z-index: 2;
+	background-color: #111310;
+}
+
+@keyframes animEnter {
+	0% {
+		background-color: var(--brandColor);
+		height: 100vh;
+		transform: translateY(100%);
+	}
+
+	50% {
+		height: 100vh;
+		transform: translateY(0);
+	}
+
+	100% {
+		background-color: var(--brandColor);
+		height: 100vh;
+		transform: translateY(-100%);
+	}
+}
+
+@keyframes animExit {
+	0% {
+		background-color: var(--brandBlack);
+		height: 100vh;
+		transform: translateY(100%);
+	}
+
+	50% {
+		height: 400vh;
+		transform: translateY(0);
+	}
+
+	100% {
+		background-color: var(--brandBlack);
+		height: 100vh;
+		transform: translateY(0);
+	}
+}
+
+@keyframes fadeBackground {
+	0% {
+		background-color: #111310;
+	}
+
+	50% {
+		background-color: #111310;
+	}
+
+	100% {
+		background-color: transparent;
 	}
 }
 
