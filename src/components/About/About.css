@@ -10,4 +10,9 @@
 		text-align: center;
 		background-color: #01cf97;
 	}
+
+	& *:not(img) {
+		width: 100%;
+		height: 100%;
+	}
 }

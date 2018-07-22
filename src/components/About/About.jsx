@@ -1,4 +1,5 @@
 import React, { Component } from "react"
+import Revealer from "../../components/Revealer/Revealer"
 import "./About.css"
 
 
@@ -27,16 +28,26 @@ class About extends Component {
 						<div className="header-offset">
 							<h1 className="anim-title">{post.title}</h1>
 						</div>
-						<div dangerouslySetInnerHTML={{ __html: post.html }} />
+						<Revealer>
+							<div dangerouslySetInnerHTML={{ __html: post.html }} />
+						</Revealer>
 					</div>
 					<div className="gutter-top">
-						<h2>{post.skill_title}</h2>
-						<p>{post.skill_intro}</p>
+						<Revealer>
+							<h2>{post.skill_title}</h2>
+						</Revealer>
+						<Revealer>
+							<p>{post.skill_intro}</p>
+						</Revealer>
 						<ul className="skills">
 							{ post.skills.map(skill => (
-								<li key={skill} className="skills__item">
-									<img src={skill.image} alt={skill.name} />
-									<h4 className="skills__title">{skill.name}</h4>
+								<li key={skill}>
+									<Revealer>
+										<div className="skills__item">
+											<img src={skill.image} alt={skill.name} />
+											<h4 className="skills__title">{skill.name}</h4>
+										</div>
+									</Revealer>
 								</li>
 							))}
 						</ul>
