@@ -1,6 +1,6 @@
 import React from "react"
 import Link from "gatsby-link"
-import Logo from "../../assets/logo.svg"
+import Logo from "../Logo/Logo"
 import UserLinks from "../UserLinks/UserLinks"
 import "./Header.css"
 
@@ -10,7 +10,7 @@ class Header extends React.Component {
 		const { config } = this.props
 		return (
 			<div className="header">
-				<Link to="/" className="header__link"><Logo /></Link>
+				<Link to="/" className="header__link"><Logo color={this.props.currentPath !== "/about/" ? "#00dea1" : ""} /></Link>
 				<UserLinks config={config} icon />
 			</div>
 		)

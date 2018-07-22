@@ -120,7 +120,7 @@ export default class MainLayout extends React.Component {
 				</Helmet>
 				<Circle classes="shape shape--left" color="#00DEA1" />
 				<Triangle classes="shape shape--right" color="#00DEA1" />
-				<DefaultTransition><Header config={config} /></DefaultTransition>
+				<DefaultTransition><Header config={config} currentPath={pathname} /></DefaultTransition>
 				<Nav menu={this.props.data.allMarkdownRemark.edges} onContactLink={this.handleContactLink} currentPath={pathname} />
 				<main>{children()}</main>
 				<Footer config={config} />

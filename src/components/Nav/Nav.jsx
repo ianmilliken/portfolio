@@ -64,13 +64,13 @@ class Nav extends React.Component {
 				<DefaultTransition>
 					<div className="nav">
 						<div className="nav__link nav__link--l">
-							<span className="nav__line" />
+							<span className="nav__line" style={{ backgroundColor: (this.props.currentPath === "/about/" ? "#ffffff" : "") }} />
 							<a href="/contact/">
 								<span className="nav__text">Contact</span>
 							</a>
 						</div>
 						<div className="nav__link nav__link--r">
-							<span className="nav__line" />
+							<span className="nav__line" style={{ backgroundColor: (this.props.currentPath === "/about/" ? "#ffffff" : "") }} />
 							<a href="/about/">
 								<span className="nav__text">About</span>
 							</a>
