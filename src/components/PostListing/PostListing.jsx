@@ -27,7 +27,15 @@ class PostListing extends React.Component {
 		const postList = this.getPostList()
 		return (
 			<div className="container" style={{ transform: 'translateY(-10rem)' }}>
-				<span className="scroll-indicator" />
+				<span className="scroll-indicator">	
+					<svg className="scroll-indicator__mouse" width="21px" height="35px" viewBox="0 0 21 35" version="1.1">
+					    <g stroke="#00dea1" strokeWidth="1" fill="none" fillRule="evenodd">
+					        <g transform="translate(-500.000000, -509.000000)">
+					            <rect x="500.5" y="509.5" width="20" height="34" rx="10" />
+					        </g>
+					    </g>
+					</svg>
+				</span>
 				<h4 className="label label--large center">Selected Works</h4>
 				<ul className="list">
 					{// Your post list here.
