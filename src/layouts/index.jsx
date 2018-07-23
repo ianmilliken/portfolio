@@ -34,26 +34,26 @@ export default class MainLayout extends React.Component {
 				id: 'txz5lhd'
 			}
 		})
-	/* var circle_animation = anime({
-	  targets: '.shape--left',
-	  translateX: function() { return anime.random(-100, 25) + '%'; },
-	  translateY: function() { return anime.random(-75, 150) + '%'; },
-	  duration: function() { return anime.random(15000, 20000); },
-	  direction: 'alternate',
-	  loop: true,
-	  easing: 'easeInCubic'
-	});
-	var triangle_animation = anime({
-	  targets: '.shape--right',
-	  translateX: function() { return anime.random(-75, 75) + '%'; },
-	  translateY: function() { return anime.random(-50, 75) + '%'; },
-	  duration: function() { return anime.random(10000, 15000); },
-	  direction: 'alternate',
-	  loop: true,
-	  easing: 'easeInCubic'
-	}); */
 
+		const circle_animation = anime({
+		  targets: '.shape--left',
+		  translateX: function() { return anime.random(-100, 25) + '%'; },
+		  translateY: function() { return anime.random(-75, 150) + '%'; },
+		  duration: function() { return anime.random(20000, 25000); },
+		  direction: 'alternate',
+		  loop: true,
+		  easing: 'easeInOutSine'
+		})
 
+		const triangle_animation = anime({
+		  targets: '.shape--right',
+		  translateX: function() { return anime.random(-75, 75) + '%'; },
+		  translateY: function() { return anime.random(-50, 75) + '%'; },
+		  duration: function() { return anime.random(15000, 20000); },
+		  direction: 'alternate',
+		  loop: true,
+		  easing: 'easeInOutSine'
+		})
 	}
 
 	getLocalTitle() {
