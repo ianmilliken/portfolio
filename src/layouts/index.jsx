@@ -15,7 +15,6 @@ import DefaultTransition from "../components/Transition/DefaultTransition"
 
 import config from "../../data/SiteConfig"
 import "./index.css"
-import "./font-awesome.css"
 
 
 export default class MainLayout extends React.Component {
