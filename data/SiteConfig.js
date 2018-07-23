@@ -26,17 +26,17 @@ module.exports = {
 		{
 			label: "GitHub",
 			url: "https://github.com/ianmilliken",
-			iconClassName: "fa fa-github"
+			iconClassName: "github"
 		},
 		{
 			label: "Behance",
 			url: "https://www.behance.net/ianmilliken90",
-			iconClassName: "fa fa-behance"
+			iconClassName: "behance"
 		},
 		{
 			label: "LinkedIn",
 			url: "https://www.linkedin.com/in/ian-milliken-b733963a/",
-			iconClassName: "fa fa-linkedin"
+			iconClassName: "linkedin"
 		}
 	],
 	userSkills: [

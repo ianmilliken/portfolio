@@ -11,7 +11,7 @@ class Header extends React.Component {
 		return (
 			<div className="header">
 				<Link to="/" className="header__link"><Logo color={this.props.currentPath !== "/about/" ? "#00dea1" : ""} /></Link>
-				<UserLinks config={config} icon />
+				<UserLinks config={config} color={this.props.currentPath.includes("/work/") ? "#656565" : ""} icon />
 			</div>
 		)
 	}
