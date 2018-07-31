@@ -5,6 +5,31 @@
 	opacity: 1;
 }
 
+.index .nav__link {
+	@media only screen and (max-width: 841px) {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background-color: #111310ab;
+	}
+}
+
+.about .nav__link {
+	@media only screen and (max-width: 841px) {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background-color: #00dea1;
+	}
+}
+
+.work .nav__link {
+	@media only screen and (max-width: 841px) {
+		background-color: #ffffff;
+		box-shadow: 0 -1rem 10rem 0rem #efefef;
+	}
+}
+
 .nav__link {
 	position: fixed;
 	z-index: 1;
@@ -16,11 +41,6 @@
 	transition: transform 600ms ease, opacity 600ms ease;
 	transition-delay: 200ms;
 	will-change: transform, opacity;
-
-	@media only screen and (max-width: 841px) {
-		background-color: #ffffff;
-		box-shadow: 0 -1rem 10rem 0rem #efefef;
-	}
 
 	@media only screen and (min-width: 842px) {
 		bottom: auto;
