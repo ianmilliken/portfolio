@@ -5,9 +5,20 @@
 }
 
 .textblock {
-    padding: 8.8rem 17.2rem;
+	padding-top: 8.8rem;
+	padding-bottom: 8.8rem;
 	font-family: 'Coranto 2', serif;
-	font-size: 2.1rem;
 	text-align: center;
 	background-color: #ffffff;
+
+	& p {
+		font-size: 2.1rem;
+		font-weight: 300;
+		line-height: 1.6;
+	}
+
+	@media only screen and (min-width: 842px) {
+		padding-left: 10%;
+		padding-right: 10%;
+	}
 }

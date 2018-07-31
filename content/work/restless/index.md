@@ -75,8 +75,8 @@ stack:
   <p>Restless picked Nanami Rounded, a clean & contemporary geometric sans-serif, as their brand font from a list of suggestions. Nanami compliments the branding well thanks to its soft edges. It's also highly legible making it a good choice for marketing and editorial purposes.</p>
 </c-revealer>
 
-<c-grid columns="1-2" fill="background">
-	<img src="/images/logo-with-text.svg" alt="Restless logo with text">
-	<img src="/images/nanami_rounded_bold.svg" alt="Nanami Rounded Bold">
-	<img src="/images/nanami_rounded_extra_light.svg" alt="Nanami Rounded Extra Light">
+<c-grid columns="1-2">
+	<wrapper color="#ffffff"><img src="/images/logo-with-text.svg" alt="Restless logo with text"></wrapper>
+	<wrapper color="#ffffff"><img src="/images/nanami_rounded_bold.svg" alt="Nanami Rounded Bold"></wrapper>
+	<wrapper color="#ffffff"><img src="/images/nanami_rounded_extra_light.svg" alt="Nanami Rounded Extra Light"></wrapper>
 </c-grid>

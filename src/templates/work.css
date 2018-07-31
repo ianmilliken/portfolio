@@ -41,10 +41,14 @@
 
 .header--work {
 	display: grid;
-	grid-template-columns: 2.5fr 1.5fr;
+	grid-template-columns: 1fr;
 	grid-gap: 4rem;
-	height: 80vh;
 	min-height: 45.6rem;
+
+	@media only screen and (min-width: 842px) {
+		grid-template-columns: 2.5fr 1.5fr;
+		height: 80vh;
+	}
 }
 
 .work__header-titles {
@@ -58,12 +62,17 @@
 }
 
 .work__title {
-	font-size: 6rem;
+	font-size: 4.8rem;
 	font-weight: 800;
+
+	@media only screen and (min-width: 842px) {
+		font-size: 6rem;
+	}
 }
 
 .work__intro {
-	padding: 8.8rem 17.2rem;
+	padding-top: 8.8rem;
+	padding-bottom: 8.8rem;
 	font-family: 'Coranto 2', serif;
 	text-align: center;
 	background-color: #ffffff;
@@ -73,9 +82,15 @@
 		font-weight: 300;
 		line-height: 1.6;
 	}
+
+	@media only screen and (min-width: 842px) {
+		padding-left: 10%;
+		padding-right: 10%;
+	}
 }
 
 .work__link {
+	transition: none;
 
 	& > a {
 		position: relative;
@@ -110,6 +125,10 @@
 	& > a:hover::before {
 		height: 0.4rem;
 	}
+
+	@media only screen and (max-width: 841px) {
+		margin-top: 4rem;
+	}
 }
 
 .work__arrow { 
@@ -124,6 +143,11 @@
 .work__list {
 	font-size: 1.4rem;
 	font-weight: 300;
+
+	@media only screen and (max-width: 841px) {
+		display: grid;
+		grid-template-columns: 20% 80%;
+	}
 }
 
 .work__contact {
