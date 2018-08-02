@@ -21,11 +21,13 @@ class Header extends React.Component {
 		const { config } = this.props
 		return (
 			<div className="header">
-				<Link to="/" className="header__link"><Logo color={this.props.currentPath !== "/about/" ? "#00dea1" : ""} /></Link>
+				<div>
+					<Link to="/" className="header__link"><Logo color={this.props.currentPath !== "/about/" ? "#00dea1" : ""} /></Link>
+				</div>
 				<div className="show-at-tablet">
 					<UserLinks config={config} color={this.props.currentPath.includes("/work/") ? "#656565" : ""} icon />
 				</div>
-				<div className="hide-at-tablet">	
+				<div className="header__burger hide-at-tablet">	
 					<a href="#" onClick={this.handleClick}>
 						<svg width="21px" height="10px" viewBox="0 0 21 10" version="1.1">
 						    <g stroke="none" strokeWidth="1" fill="none" fillRule="evenodd" strokeLinecap="square">

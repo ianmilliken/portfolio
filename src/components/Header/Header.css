@@ -10,6 +10,10 @@
 		padding-left: 6rem;
 		padding-right: 6rem;
 	}
+
+	&__burger {
+		justify-self: end;
+	}
 }
 
 .entered .header__link,
