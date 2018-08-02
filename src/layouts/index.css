@@ -9,7 +9,8 @@
 	--uiFont: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 
 	/* Color Pallete */
-	--brandColor: #00dea1;
+	--brandColor: #21e3b1;
+	--brandBlue: #0d1720;
 	--brandBlack: #111310;
 }
 
@@ -438,14 +439,14 @@ main {
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background-color: var(--brandColor);
+	background-color: var(--brandBlue);
 	opacity: 0;
 	transition: opacity 300ms ease;
 	will-change: opacity;
 
 	&.is-active {
 		z-index: 0;
-		opacity: 0.25;
+		opacity: 0.85;
 	}
 }
 
@@ -819,4 +820,18 @@ main {
 .is-hidden {
 	display: none;
 	visibility: hidden;
+}
+
+.show-at-tablet {
+	display: none;
+	@media only screen and (min-width: 842px) {
+		display: unset;
+	}
+}
+
+.hide-at-tablet {
+	display: unset;
+	@media only screen and (min-width: 842px) {
+		display: none;
+	}
 }

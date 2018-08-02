@@ -5,6 +5,7 @@ import WebFont from 'webfontloader'
 
 import Header from "../components/Header/Header"
 import Nav from "../components/Nav/Nav"
+import MobileNav from "../components/Nav/MobileNav"
 import Footer from "../components/Footer/Footer"
 import Triangle from "../components/Icons/Triangle"
 import Circle from "../components/Icons/Circle"
@@ -22,9 +23,9 @@ export default class MainLayout extends React.Component {
 	constructor(props) {
 		super(props)
 		this.state = {
-			contact: false
+			mobileMenu: false
 		}
-		this.handleContactLink = this.handleContactLink.bind(this)
+		this.handleMobileMenu = this.handleMobileMenu.bind(this)
 	}
 
 	componentDidMount() {
@@ -84,11 +85,11 @@ export default class MainLayout extends React.Component {
 		return title
 	}
 
-	handleContactLink(e) {
+	handleMobileMenu(e) {
 		e.preventDefault()
-		const { contact} = this.state
+		const { mobileMenu } = this.state
 		this.setState({
-			contact: contact ? false : true
+			mobileMenu: mobileMenu ? false : true
 		})
 	}
 
@@ -119,11 +120,12 @@ export default class MainLayout extends React.Component {
 				</Helmet>
 				<Circle classes="shape shape--left" color="#00DEA1" />
 				<Triangle classes="shape shape--right" color="#00DEA1" />
-				<DefaultTransition><Header config={config} currentPath={pathname} /></DefaultTransition>
-				<Nav menu={this.props.data.allMarkdownRemark.edges} onContactLink={this.handleContactLink} currentPath={pathname} />
+				<DefaultTransition><Header config={config} currentPath={pathname} handleMobileMenu={this.handleMobileMenu} /></DefaultTransition>
+				<Nav menu={this.props.data.allMarkdownRemark.edges} currentPath={pathname} />
 				<main>{children()}</main>
 				<Footer config={config} />
-				<div className={`overlay ${ this.state.contact ? `is-active` : ``}`} />
+				<MobileNav active={this.state.mobileMenu} handleMobileMenu={this.handleMobileMenu} />
+				<div className={`overlay ${ this.state.mobileMenu ? `is-active` : ``}`} />
 			</div>
 		)
 	}

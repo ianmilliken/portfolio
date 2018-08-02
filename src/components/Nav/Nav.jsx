@@ -7,15 +7,6 @@ import "./Nav.css"
 
 class Nav extends React.Component {
 
-	constructor(props) {
-		super(props)
-		this.handleClick = this.handleClick.bind(this)
-	}
-
-	handleClick(e) {
-		this.props.onContactLink(e)
-	}
-
 	getLink( query, direction ) {
 		const edges = this.props.menu
 
