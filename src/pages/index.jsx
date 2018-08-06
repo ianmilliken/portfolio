@@ -17,7 +17,7 @@ class Index extends React.Component {
 					<SEO postEdges={postEdges} />
 					<div className="full-height grid-banner">
 						<div className="container">
-							<div className="center">
+							<div className="header-block">
 								<h1 className="title anim-title delay-200">Hello. G’day. Ayup.</h1>
 								<p className="p--large anim-title delay-400">My name’s Ian. I design & build awesome products & brands for innovative businesses around the globe.</p>
 							</div>

@@ -30,6 +30,14 @@
 	}
 }
 
+.work .nav {
+	display: block;
+}
+
+.nav {
+	display: none;
+}
+
 .nav__link {
 	position: fixed;
 	z-index: 1;

@@ -100,16 +100,16 @@ export default class MainLayout extends React.Component {
 		let textColor
 		let locationClass
 		if (pathname.includes("/work/")) {
-			backgroundColor = "#F9F9F9"
+			backgroundColor = "#f9f9f9"
 			textColor = "#111310"
 			locationClass = "work"
 		} else if (pathname === "/about/") {
-			backgroundColor = "#00DEA1"
-			textColor = "#FFFFFF"
+			backgroundColor = "#21e3b1"
+			textColor = "#ffffff"
 			locationClass = "about"
 		} else {
-			backgroundColor = "#111310"
-			textColor = "#FFFFFF"
+			backgroundColor = "#0d1720"
+			textColor = "#ffffff"
 			locationClass = "index"
 		}
 		return (
