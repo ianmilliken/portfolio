@@ -17,7 +17,7 @@ class Logo extends React.Component {
 			height = "23px"
 		}
 		return (
-			<svg width={width} height={height} viewBox="0 0 48 46" version="1.1">
+			<svg className={this.props.classes ? this.props.classes : ``} width={width} height={height} viewBox="0 0 48 46" version="1.1">
 				<g stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
 					<g id="logo" fill={this.props.color ? this.props.color : "#ffffff"}>
 						<polygon id="i" points="0.970865718 16.2721795 10.901057 16.2721795 10.901057 35.3765309 0.970865718 35.3765309"></polygon>

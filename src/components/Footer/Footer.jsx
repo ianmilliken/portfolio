@@ -13,11 +13,17 @@ class Footer extends Component {
 
 		return (
 			<footer className="footer">
-				<Logo color="#FFFFFF" width="34" height="32" />
-				<div className="footer__credit">Ian Milliken</div>
-				<p className="footer__selline">UI & UX Design<span>  &#47;&#47;  </span>Front End Development<span>  &#47;&#47; </span>Branding</p>
-				<a className="label" href={`mailto:${config.userEmail}`}>{config.userEmail}</a>
-				<p className="label">{copyright}</p>
+				<div className="footer__info">
+					<Logo classes="footer__logo" color="#21e3b1" width="34" height="32" />
+					<div className="footer__l">
+						<div className="footer__credit">Ian Milliken</div>
+						<p className="footer__selline">UI <span>+</span> UX Design<span>+</span> Front End <span>+</span> Branding</p>
+					</div>
+				</div>
+				<div className="footer__r">
+					<a className="label" href={`mailto:${config.userEmail}`}>{config.userEmail}</a>
+					<p className="label">{copyright}</p>
+				</div>
 			</footer>
 		)
 	}

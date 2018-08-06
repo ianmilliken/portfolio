@@ -1,9 +1,33 @@
 .footer {
 	padding: 10rem 6rem 6rem;
-	text-align: center;
+
+	@media only screen and (max-width: 841px) {
+		text-align: center;
+	}
+
+	@media only screen and (min-width: 842px) {
+		display: grid;
+		grid-template-columns: auto auto;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__info {
+		display: flex;
+		align-items: center;
+		text-align: left;
+
+		@media only screen and (max-width: 841px) {
+			justify-content: center;
+			margin-bottom: 3.8rem;
+		}
+	}
+
+	&__logo {
+		margin-right: 1.8rem;
+	}
 
 	&__credit {
-		margin-top: 1rem;
 		font-size: 1.7rem;
 		font-weight: 700;
 	}
